@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "capacityName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "skuName": {
+      "type": "string",
+      "defaultValue": "F2", 
+      "allowedValues": [ "F2", "F4", "F8", "F16", "F32", "F64", "F128" ]
+    },
+    "administratorEmails": {
+      "type": "array"
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Fabric/capacities",
+      "apiVersion": "2023-11-01",
+      "name": "[parameters('capacityName')]",
+      "location": "[parameters('location')]",
+      "sku": {
+        "name": "[parameters('skuName')]"
+      },
+      "properties": {
+        "administration": {
+          "members": "[parameters('administratorEmails')]"
+        }
+      }
+    }
+  ]
+}
