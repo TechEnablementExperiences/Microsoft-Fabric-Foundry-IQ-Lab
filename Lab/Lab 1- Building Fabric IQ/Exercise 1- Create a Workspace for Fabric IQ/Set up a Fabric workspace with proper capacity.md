@@ -9,7 +9,7 @@ Using a web browser of your choice, please navigate to this Microsoft Fabric lin
 
 1. Enter your AAD Username e.g. AIAP.<YourCustomUserName>@fabcon25eu.onmicrosoft.com in the Email field, then click on the Submit button.
 
-   ![Fabric Login](../../media/FabricLogin.png)
+   ![FabricLogin](../../media/Fabriclogin.png)
    
    > During the workshop, you should have received a printed one-pager from the proctor or speaker. Replace <YourCustomUserName> with the value provided on that sheet. Then, enter or copy the AAD user from the page, for example: AIAP.user001@fabcon25eu.onmicrosoft.com.
 
