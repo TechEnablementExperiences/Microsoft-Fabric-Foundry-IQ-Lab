@@ -1,4 +1,4 @@
-# Prepare the Power BI semantic model and Ontology
+# Generating Semantic Model
 
 ## Section 1: Semantic Model
 
