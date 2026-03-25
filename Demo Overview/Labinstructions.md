@@ -1,4 +1,4 @@
-# Microsoft Fabric and Foundry IQ Lab
+# Building Intelligent Solutions with Microsoft Fabric IQ & Foundry IQ – Hands-on Lab 
  
 **The estimated time to complete this lab is 1-3 hours.**
  
@@ -14,7 +14,7 @@ No Microsoft technology, nor any of its component technologies, including the de
  
 **Copyright**
  
-©2025 Microsoft Corporation. All rights reserved. 
+©2026 Microsoft Corporation. All rights reserved. 
  
 By using this demo/lab, you agree to the following terms:
  
@@ -25,9 +25,17 @@ COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERV
 THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY AND PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SETUP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY AND CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION WOULD WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
  
  
+
+
 ## Overview
 
-![Lab535 Archi.png](./FabricIQ_FoundryIQ_lab_Architect.png)
+    
+![archi](https://github.com/TechEnablementExperiences/Microsoft-Fabric-and-Foundry-IQ/blob/main/media/Archinew.png)
+
+
+
+
+
  
 This lab demonstrates how **Microsoft Fabric**, **Fabric IQ**, and **Foundry IQ** work together as a single, **end-to-end intelligence platform** to transform **raw enterprise data** into **trusted, business-aware AI actions**.
 
@@ -237,32 +245,36 @@ At this stage, the organization has established a **trusted intelligence layer**
 
 This intelligence foundation becomes the starting point for the next stage of the lab, where **Foundry IQ introduces AI agents that can act on this intelligence**.
 
-### Exercise 1: Create a Workspace for Fabric IQ
-**Task 1.1:** Set up a Fabric workspace with proper capacity.
+### [Exercise 1: Create a Workspace for Fabric IQ](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%201-%20Create%20a%20Workspace%20for%20Fabric%20IQ/Set%20up%20a%20Fabric%20workspace%20with%20proper%20capacity.md)
 
-### Exercise 2: Build a Lakehouse for the ontology
-**Task 2.1:** Build a Lakehouse and load batch data into the Lakehouse.  
-**Task 2.2:** Build an Eventhouse to process streaming data.
+**Task 1.1:** User login to Fabric.  
+**Task 1.2:** Set up a Fabric workspace with proper capacity. 
 
-### Exercise 3: Prepare the Power BI semantic model
+### [Exercise 2: Build a Lakehouse for the ontology](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%202%20-%20Build%20a%20Lakehouse%20for%20ontology/Build%20a%20Lakehouse%20and%20load%20batch%20data%20into%20the%20Lakehouse.md)
+
+**Task 2.1:** Building a Lakehouse.  
+**Task 2.2:** Load batch data into the Lakehouse. 
+
+### [Exercise 3: Prepare the Power BI semantic model](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%203%20-%20Prepare%20the%20Power%20BI%20semantic%20model/Generate%20ontology%20from%20a%20semantic%20model.md)
 **Task 3.1:** Build a Direct Lake semantic model.  
 **Task 3.2:** Choose required entities/tables for the semantic model.  
 **Task 3.3:** Establish relationships between entities.
 
-### Exercise 4: RTI/Operations Agent
-**Task 4.1 –** Create an Eventhouse for real-time data.  
-**Task 4.2 –** Ingest streaming telemetry into Eventhouse.  
-**Task 4.3 –** Create Operations Agent (Fabric IQ) and connect the agent to the Ontology.  
-**Task 4.4 –** Observe agent behavior in real-time
+### [Exercise 4: RTI/Operations Agent](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%204%20-%20RTI%20(Operations%20agent)/Create%20Operations%20Agent%20(Fabric%20IQ)%20and%20Connect%20Agent%20to%20Ontology.md)
+**Task 4.1:** Create an Eventhouse for real-time data.  
+**Task 4.2:** Ingest streaming telemetry into Eventhouse.  
+**Task 4.3:** Create Operations Agent (Fabric IQ).  
+**Task 4.4:** Observe agent behavior in real-time.
 
-### Exercise 5: Create an Ontology on top of a semantic model
-**Task 5.1:** Generate ontology from a semantic model  
-**Task 5.2:** Validate the attribute binding and key attributes for establishing ontology relationships  
-**Task 5.3:** Additional attributes (stream data) to enrich the ontology's capabilities
+### [Exercise 5: Create an Ontology on top of a semantic model](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%205%20-%20Create%20ontology%20on%20top%20of%20a%20semantic%20model/Generate%20ontology%20from%20a%20semantic%20model.md)
 
-### Exercise 6: Connect the Ontology using Data Agent and AI Foundry
-**Task 6.1:** Create a data agent with ontology as the data source  
-**Task 6.2:** Validate the data agent using natural language queries  
+**Task 5.1:** Generate ontology from a semantic model.  
+**Task 5.2:** Additional attributes (stream data) to enrich the ontology's capabilities.  
+**Task 5.3:** Validate the attribute binding and key attributes for establishing ontology relationships.  
+
+### [Exercise 6: Connect the Ontology using Data Agent and AI Foundry](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%206%20-%20Connecting%20ontology%20using%20data%20agent%20%26%20AI%20Foundry/Creating%20a%20Data%20Agent%20with%20Ontology.md)
+**Task 6.1:** Create a data agent with ontology as the data source.  
+**Task 6.2:** Validate the data agent using natural language queries.  
 **Task 6.3:** Create a Microsoft Foundry agent and add the data agent as a tool.
 
 ---
@@ -396,34 +408,36 @@ You will see how:
 
 Together, **Microsoft Fabric, Fabric IQ, and Foundry IQ** create a single platform that connects **data, intelligence, and AI action** across the enterprise.
 
-### Exercise 1: Provision the AI Foundry Foundation
+
+### [Exercise 1: Provision the AI Foundry Foundation](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%201%20-%20Provision%20the%20AI%20Foundry%20Foundation/Exercise1-Provision%20the%20AI%20Foundry%20Foundation.md)
+
 Set up the governance, compute, and model layers required for an agentic ecosystem.
 
  **Task 1.1:** Provision a Microsoft Foundry Hub and a corresponding project to establish the central administrative and development workspace.  
  **Task 1.2:** Deploy a high-reasoning large language model and a compatible embedding model to provide the agent with core intelligence and vector search capabilities.  
  **Task 1.3:** Configure secure service connections within the Hub to enable seamless authenticated communication between AI Foundry, OpenAI, and Microsoft Fabric.
 
-### Exercise 2: Integrate Enterprise Knowledge via Foundry IQ
+### [Exercise 2: Integrate Enterprise Knowledge via Foundry IQ](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%202%20-%20Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ/Exercise%202%20-%20Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ.md)
 Connect the agent to live enterprise data using indexed and federated patterns for "Zero-ETL" RAG.
 
  **Task 2.1:** Link the AI Foundry project to a Microsoft Fabric Lakehouse to enable direct access to enterprise data without the need for data movement.  
  **Task 2.2:** Configure Foundry IQ by setting up indexed sources for unstructured files and federated sources for real-time structured data retrieval.  
  **Task 2.3:** Attach these configured knowledge sources to the agent so it can dynamically select the most relevant data source based on user intent.
 
-### Exercise 3: Build an intelligent agent with Tool Calling
+### [Exercise 3: Build an intelligent agent with Tool Calling](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%203%20-%20Build%20an%20intelligent%20agent%20with%20Tool%20Calling/Exercise%203%20-%20Build%20an%20intelligent%20agent%20with%20Tool%20Calling.md)
 Define the agent’s logic and its ability to interact with external systems through functions.
 
  **Task 3.1:** Create a new agent and define its persona through clear system instructions that govern its behavioral boundaries and reasoning style.  
  **Task 3.2:** Implement Tool Calling capabilities by defining custom functions that the agent can autonomously trigger to perform external operations or live API calls.
 
-### Exercise 4: Multi-Agent Orchestration and Validation
+### [Exercise 4: Multi-Agent Orchestration and Validation](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%204%20-%20Multi-Agent%20Orchestration%20and%20Validation/Ex4-Multi-Agent%20Orchestration%20and%20Validation.md)
 Implement advanced agent-to-agent communication and verify the complete workflow.
 
  **Task 4.1:** Orchestrate a multi-agent workflow by configuring a primary orchestrator agent to delegate specific sub-tasks to specialized agents.  
  **Task 4.2:** Validate the end-to-end agentic RAG flow in the Playground by submitting complex queries that require the agent to synthesize information from both files and live tables.  
  **Task 4.3:** Inspect the execution path using the Trace tool to verify the agent's internal reasoning steps and the accuracy of its tool selection logic.
 
-### Exercise 5: Observability, Evaluation & Guardrails
+### [Exercise 5: Observability, Evaluation & Guardrails](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%205%20-%20Observability,%20Evaluation%20%26%20Guardrails/Exercise5-Observability,%20Evaluation%20%26%20Guardrails.md)
 Instrument your agent for live monitoring, enforce behavioral guardrails, and establish a repeatable evaluation process.
 
  **Task 5.1:** Enable observability and auditability by connecting the Foundry Control Plane to Azure Monitor and Application Insights for tracing, telemetry, and query logging.  
