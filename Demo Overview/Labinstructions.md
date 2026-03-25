@@ -30,7 +30,7 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY AND PRODUCT FEATURES AND FUNC
 ## Overview
 
     
-![archi](https://github.com/TechEnablementExperiences/Microsoft-Fabric-and-Foundry-IQ/blob/main/media/Archinew.png)
+![archi](../Archinew.png)
 
 
 
