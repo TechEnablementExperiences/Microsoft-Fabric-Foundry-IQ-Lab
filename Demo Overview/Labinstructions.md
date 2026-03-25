@@ -30,10 +30,7 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY AND PRODUCT FEATURES AND FUNC
 ## Overview
 
     
-![archi](../Archinew.png)
-
-
-
+![archi](Archinew.png)
 
 
  
