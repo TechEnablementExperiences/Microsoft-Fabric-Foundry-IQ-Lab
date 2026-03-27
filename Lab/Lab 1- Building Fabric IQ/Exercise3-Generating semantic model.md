@@ -4,14 +4,14 @@
 1. In your Fabric workspace, click on the **New item** button in the top command bar.
 2. In the New item creation pane, use the search bar to type **"Semantic model"**.
 3. Select the **Semantic model** card in the search results and click on it to initiate creation.
-
-    ![Semantic Model](../media/SemanticModel.png)
+   
+    ![SemanticModel](../media/SemanticModel.png)
 
 ## Task 3.2: Choose required entities/tables for the semantic model 
 
 1. After clicking **Semantic Model**, you will be prompted to choose the data source. Select **OneLake catalog**.
 
-    ![Source Selection](../media/SourceSelection.png)
+    ![SourceSelection](../media/SourceSelection.png)
 
 2. Choose the data source within the OneLake catalog, then select the **Fabric_IQ** Lakehouse and click on **Connect**.
 
@@ -30,11 +30,11 @@ This task demonstrate how to establish relationships between Lakehouse entities 
 
 1. In Semantic Model page, click on **Manage relationships**.
 
-    ![Manage Relationship](../media/SMLoadingTables.png)
+    ![ManageRelationship](../media/SMLoadingTables.png)
 
 2. For creating relationship, click on **New relationship** button at top.
 
-    ![New Relationship](../media/NewRelationship.png)
+    ![NewRelationship](../media/NewRelationship.png)
 
 3. Select the **campaigns** table as the From table and the **product** table as the To table, and create a relationship based on the **ProductID** column. Configure the appropriate **cardinality** and **cross-filter direction**, **Enable** Make this relationship active, and then click on the Save button.
  
