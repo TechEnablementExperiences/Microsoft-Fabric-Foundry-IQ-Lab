@@ -11,10 +11,10 @@ This Exercise is about provisioning the AI Foundry Foundation, including creatin
 
 2. Click on **Build** to create agents, deploy models, and build workflows.
 
-   > **Note:** Make sure the **New Foundry** toggle is turned On.
-   > This setting is required to use the latest Foundry portal UI.
+    > **Note:** Make sure the **New Foundry** toggle is turned On.
+    > This setting is required to use the latest Foundry portal UI.
 
-   ![Step 7 Image](../media/image7.png)
+     ![Step 7 Image](../media/image7.png)
 
 ### Task 1.2: Deploy LLM and embedding models
 
