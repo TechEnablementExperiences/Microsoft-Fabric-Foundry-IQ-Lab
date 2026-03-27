@@ -45,6 +45,6 @@ This task demonstrate how to establish relationships between Lakehouse entities 
    > **Note**: Select the left-side table as the From table and the right-side table as the To table, set cardinality to Many-to-one, choose Single for cross-filter direction, enable Make this relationship active, and then click Save.
    > **Note**: Alternatively, you can drag and drop the master unique ID from the master table to  the transaction table to build relationship page. Choose the cardinality, direction, and click save.
 
-       ![relation](../media/relation.png)
+   ![relation](../media/relation.png)
 
-       ![relationcnt](../media/relationcnt.png)
+   ![relationcnt](../media/relationcnt.png)
