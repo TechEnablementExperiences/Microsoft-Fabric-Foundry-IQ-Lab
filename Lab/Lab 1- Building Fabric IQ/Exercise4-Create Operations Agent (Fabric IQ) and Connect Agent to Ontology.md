@@ -16,6 +16,8 @@ To address this need, EVA enhances the data model with:
 - Real-time inventory monitoring enabled  
 - KQL-powered queries available for live dashboards  
 - Proactive operational intelligence for promotion performance
+- Operations Agent monitors inventory anomalies
+- RTI dashboard supports live decisions
 
 ## Task 4.1: Create an Eventhouse for real-time data
 This task to creates an Eventhouse in the workspace to load real-time data. 
