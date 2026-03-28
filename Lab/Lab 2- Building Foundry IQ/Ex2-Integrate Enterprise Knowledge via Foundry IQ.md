@@ -2,17 +2,21 @@
  
 This exercise focuses on integrating enterprise knowledge using **Foundry IQ** by enabling indexed sources for unstructured data and federated sources for real-time structured data retrieval, along with connectivity to the **Microsoft Fabric Lakehouse**.
 
-Miguel creates a **Supervisor Agent** capable of orchestrating insights across both structured and unstructured enterprise knowledge systems by:
+**Ryan** (Customer) asks detailed product-related questions during an engagement.
 
-- Calling Fabric Data Agents for structured business insights  
-- Calling Foundry IQ for unstructured enterprise knowledge  
+To enable accurate and context-aware responses, Miguel integrates enterprise content sources such as:
+- SharePoint Product Guides  
+- Internal Policy Documents  
+- Campaign and Marketing Materials  
+
+**Foundry IQ** provides permission-aware, citation-backed grounding by connecting to these knowledge sources — ensuring that agent responses are both secure and traceable.
 
 > *“The agent shouldn’t know everything — it should know who to ask.”*
 
 ## ✅ Outcome
-- Tool-calling Supervisor Agent configured  
-- Fabric IQ and Foundry IQ successfully integrated  
-- Business-aware reasoning enabled across data domains
+- Foundry IQ Knowledge Base configured  
+- Multi-source enterprise grounding enabled  
+- No custom RAG code required for knowledge integration
 
 ### Task 2.1: Set up indexed sources for unstructured files and federated sources for real-time structured data retrieval. 
 
