@@ -1,5 +1,21 @@
-# Build Real-Time Intelligence and Operations Agent
-In this section of the workshop, you will create an Eventhouse,load streaming events and enable fast KQL-based queries for live dashboards and operational intelligence.
+# Exercise 4: Build Real-Time Intelligence and Operations Agent
+
+In this section of the workshop, you will create an **Eventhouse**, ingest streaming events, and enable fast **KQL-based queries** to power live dashboards and support operational intelligence use cases.
+
+**April (CEO)** requires real-time visibility into inventory performance during promotional campaigns.
+
+To address this need, EVA enhances the data model with:
+- Eventhouse for high-throughput event data storage  
+- Streaming inventory updates  
+- An Operations Agent to detect and monitor anomalies in real time  
+
+> *“Don’t tell me about yesterday’s stock outs — tell me before they happen.”*
+
+## ✅ Outcome
+- Eventstream and Eventhouse successfully configured  
+- Real-time inventory monitoring enabled  
+- KQL-powered queries available for live dashboards  
+- Proactive operational intelligence for promotion performance
 
 ## Task 4.1: Create an Eventhouse for real-time data
 This task to creates an Eventhouse in the workspace to load real-time data. 
