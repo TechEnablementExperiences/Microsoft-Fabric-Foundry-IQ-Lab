@@ -1,8 +1,20 @@
- ## Multi-Agent Orchestration and Validation
+# Exercise 4: Multi-Agent Orchestration and Validation
 
-## Summary
+This exercise focuses on configuring and validating **multi-agent workflows** that coordinate interactions between specialized agents to support end-to-end business processes.
 
-This demo is about multi-agent orchestration and validation, including configuring workflows to coordinate between multiple agents and validating their end-to-end operation.
+During high-demand events such as **Holiday Sales**, multiple domain-specific agents collaborate to deliver seamless customer experiences:
+
+- Interior Designer Agent recommends products  
+- Rewards Agent applies eligible discounts  
+- Responsible AI Agent blocks unsafe or non-compliant prompts  
+- Checkout Agent finalizes the customer order  
+
+All agent interactions are orchestrated by the **Supervisor Agent** to ensure coordinated decision-making across systems.
+
+## ✅ Outcome
+- Multi-agent orchestration successfully configured  
+- Business-aligned AI workflows enabled  
+- Safe and scalable automation across agent-driven processes
 
 ### Task 4.1: Configure multi-agent orchestrator and specialist agents
 
