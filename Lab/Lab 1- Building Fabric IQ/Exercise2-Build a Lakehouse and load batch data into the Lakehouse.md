@@ -1,5 +1,18 @@
-# Build a Lakehouse for ontology
-Fabric Lakehouse provides the governed data layer from which the Semantic Model is created, enabling Ontology IQ to understand business entities, metrics, and relationships for intelligent AI-driven analytics.
+# Exercise 2: Build a Lakehouse for Ontology
+Fabric **Lakehouse** provides the governed data layer from which the **Semantic Model** is created, enabling **Ontology IQ** to understand business entities, metrics, and relationships for intelligent AI-driven analytics.
+
+**EVA** ingests data from multiple enterprise and operational sources, including:
+- **Store Inventory Systems**
+- **Online Sales Platforms**  
+- **Campaign Management Systems**  
+- **Historical Stock-out Data**  
+
+All ingested data is consolidated into **Microsoft OneLake**, eliminating data silos and enabling a unified data foundation for analytics and AI-driven insights.
+
+## ✅ Outcome
+- Lakehouse successfully created  
+- Structured tables prepared for data modeling  
+- Foundational layer established for business semantics
 
 ## Task 2.1: Building a Lakehouse
 In this task of the workshop, you will be creating a Lakehouse.
