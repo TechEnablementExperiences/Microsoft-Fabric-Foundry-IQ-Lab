@@ -1,7 +1,21 @@
-# Generating an Ontology from a Semantic Model
-Build an ontology from the Semantic Model to map datasets into governed entities and relationships, forming the foundation for Data Agents and contextual analytics.
+# Exercise 5: Generating an Ontology from a Semantic Model
 
-Ontology IQ provides a business-centric semantic layer that defines entities, relationships, and context, enabling intuitive data discovery and accurate natural language insights.
+In this section, you will build an **Ontology** from the previously created **Semantic Model** to map datasets into governed entities and relationships. This forms the foundation for **Data Agents** and enables context-aware analytics across the enterprise.
+
+**Ontology IQ** introduces a business-centric semantic layer that defines entities, relationships, and contextual meaning — enabling intuitive data discovery and accurate natural language insights.
+This marks a breakthrough moment in transitioning from structured data to business-understandable intelligence.
+
+**EVA** generates a **Fabric IQ Ontology** where:
+- Stores are represented as business entities  
+- Products, Inventory, and Campaigns are modeled as relationships  
+- Business meaning and operational context become explicit  
+
+> *“This is how our business actually works — not just how data is stored.”*
+
+## ✅ Outcome
+- Ontology successfully created  
+- Graph view of business relationships established  
+- AI-ready business language layer enabled for Data Agents
 
 ## Task 5.1: Generate ontology from a semantic model
 
