@@ -41,7 +41,7 @@ Zava operates hundreds of **physical stores** alongside a rapidly growing **e-co
 
 - **Disconnected data sources** across systems and clouds  
 - **Slow, delayed insights** that limit responsiveness  
-- **Poor customer experience** during peak events such as **Black Friday**  
+- **Poor customer experience** during peak events such as **Holiday Sales**  
 - No shared **“business language”** for **AI systems and agents**
 
 To address these challenges, Zava’s leadership adopts **Microsoft Fabric, Fabric IQ, and  Foundry IQ** to unify **data**, **intelligence**, and **AI execution** across the organization.
@@ -102,9 +102,9 @@ Agents do not **guess or hallucinate**. They reason over **business-aware intell
 
 ---
 
-## End-to-End Scenario: Black Friday at Zava
+## End-to-End Scenario: Holiday Sales at Zava
 
-The final architecture comes together during a **high-pressure Black Friday retail scenario**:
+The final architecture comes together during a **high-pressure Holiday Sales in retail scenario**:
 
 - **Inventory Agents** assess **real-time availability**.  
 - **Store Agents** reason over **local demand and constraints**.  
@@ -360,7 +360,7 @@ For example:
 
 The system is designed around the **Zava Retail scenario**, where AI agents support operations during high-demand retail events.
 
-During major retail periods such as **Black Friday**, agents collaborate to assist both employees and customers.
+During major retail periods such as **Holiday Sales**, agents collaborate to assist both employees and customers.
 
 Examples of agent-driven workflows include:
 
