@@ -1,4 +1,17 @@
-#  Generating Semantic Model
+#  Exercise 3: Generating Semantic Model
+**Serena (Data Analyst) shares a common concern:**
+
+> *“I don’t want to figure out which tables to join — I want to understand which products are driving customer churn.”*
+
+To simplify analytical access and enable business-driven insights, EVA generates a **semantic model** that includes:
+- Well-defined and clean relationships  
+- Business-friendly measures and KPIs  
+- Standardized and shared data definitions  
+
+## ✅ Outcome
+- Semantic model aligned to the retail business domain  
+- Dataset prepared for Ontology generation  
+- Enables intuitive, insight-driven analysis without complex data joins
 
 ## Task 3.1: Build a Direct Lake Semantic Model 
 1. In your Fabric workspace, click on the **New item** button in the top command bar.
