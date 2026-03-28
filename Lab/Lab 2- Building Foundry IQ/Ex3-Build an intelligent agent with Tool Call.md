@@ -1,8 +1,16 @@
-## Build intelligent agents with tool calling
+# Exercise 3: Build intelligent agents with tool calling
+This exercise focuses on building intelligent agents with tool-calling capabilities, including defining agent personas, configuring system instructions, and attaching relevant enterprise knowledge sources.
 
-## Summary
+Miguel creates a **Supervisor Agent** capable of orchestrating insights across enterprise systems by:
+- Calling Fabric Data Agents for structured business insights  
+- Calling Foundry IQ for unstructured enterprise knowledge  
 
-This demo is about building intelligent agents with tool calling, including creating agent personas, system instructions, and attaching configured knowledge sources.
+> *“The agent shouldn’t know everything — it should know who to ask.”*
+
+## ✅ Outcome
+- Tool-calling Agent successfully created  
+- Fabric IQ and Foundry IQ integrated for unified intelligence  
+- Business-aware reasoning enabled across structured and unstructured data source
 
 ### Task 3.1: Create agent persona and system instructions
 
