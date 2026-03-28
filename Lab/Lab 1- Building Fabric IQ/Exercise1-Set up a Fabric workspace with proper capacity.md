@@ -1,5 +1,15 @@
-# Creating workspace for Fabric IQ
-A dedicated Microsoft Fabric workspace is established to serve as the centralized foundation for all Fabric IQ capabilities, enabling seamless integration of data, analytics, and AI-driven insights. This workspace is configured with appropriate capacity, governance, and role-based access to support secure and scalable operations.
+# Exercise 1: Create a Workspace for Fabric IQ
+A dedicated **Microsoft Fabric** workspace is established to serve as the centralized foundation for all **Fabric IQ** capabilities, enabling seamless integration of data, analytics, and AI-driven insights. This workspace is configured with appropriate capacity, governance, and role-based access to support secure and scalable operations.
+
+**Eva** (**Data Engineer**) is tasked by **Rupesh** to create a governed workspace where **Fabric IQ** artifacts can live securely.
+
+## ✅ Outcome
+- Fabric-enabled Workspace created  
+- Capacity-backed environment configured  
+- Workspace ready for:
+  - Lakehouse setup  
+  - Ontology creation  
+  - Data Agent development
 
 In this section of the workshop, you will be logging into the Microsoft Fabric Portal and creating a new Fabric Workspace.
 
