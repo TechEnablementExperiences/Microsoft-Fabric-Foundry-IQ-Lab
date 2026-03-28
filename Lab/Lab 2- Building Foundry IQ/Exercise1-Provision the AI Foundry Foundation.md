@@ -1,8 +1,18 @@
- ## Provision the AI Foundry Foundation
+# Exercise 1: Provision the AI Foundry Foundation
 
-## Summary
+This exercise focuses on provisioning the **AI Foundry Foundation**, including the creation of a **Foundry Hub** and **Project**, and deploying foundational AI models such as **GPT‑4o** and **text-embedding-ada-002**.
 
-This Exercise is about provisioning the AI Foundry Foundation, including creating a Foundry Hub and Project, and deploying base models such as GPT-4o and text-embedding-ada-002.
+Miguel provisions the following core components within Microsoft Foundry:
+- Microsoft Foundry environment  
+- Foundry Agent Service  
+- Secure identity and governance framework  
+
+> *“Agents must be observable, auditable, and secure — from day one.”*
+
+## ✅ Outcome
+- Foundry Project successfully created  
+- Base AI models deployed  
+- Secure runtime environment ready for agent execution
 
 ### Task 1.1: Provision a Foundry Hub and Project 
 
