@@ -1,8 +1,18 @@
- ## Observability, Evaluation, and Guardrails
+# Exercise 5: Observability, Evaluation, and Guardrails
+This exercise focuses on enabling end-to-end **observability**, implementing **evaluation frameworks**, and enforcing **guardrails** to ensure enterprise-grade safety and governance for AI-driven agents.
 
-## Summary
+**April (CEO)** emphasizes the need for trust and transparency in automated decision-making:
+> *“If AI makes decisions, I need to see, trust, and govern them.”*
 
-This demo is about observability, evaluation, and guardrails, including enforcing safety policies and defining metrics to assess agent performance.
+To meet these requirements, Miguel enables the following capabilities:
+- Telemetry for agent activity and performance monitoring  
+- Prompt evaluation for response quality and alignment  
+- Guardrails and policy enforcement for Responsible AI  
+
+## ✅ Outcome
+- End-to-end observability implemented  
+- Responsible AI policies enforced  
+- Enterprise-ready agents with governance and auditability
 
 ### Task 5.1: Enforce guardrails and safety policies
 
@@ -79,4 +89,4 @@ Throughout this comprehensive lab, we journeyed from provisioning the foundation
 
 We then delved into building intelligent ***agents*** 👥 with ***tool calling***, creating specialized ***agents*** for sales assistance, rewards campaigns, and inventory management, each equipped with tailored instructions and ***knowledge sources***. The orchestration phase taught us to coordinate multiple ***agents*** through ***workflows*** 🔄, validating their end-to-end operations and inspecting execution paths via ***traces*** for robust debugging and monitoring.
 
-Finally, we emphasized ***observability*** and ***safety*** by implementing ***guardrails*** 🛡️ to enforce content policies and conducting ***evaluations*** 📈 to measure ***agent performance***, ensuring reliable and ethical ***AI deployments***. Happy learning as you continue to explore and build with ***Microsoft Foundry*** and ***Fabric IQ***! 🚀
+Finally, we emphasized ***observability*** and ***safety*** by implementing ***guardrails*** 🛡️ to enforce content policies and conducting ***evaluations*** 📈 to measure ***agent performance***, ensuring reliable and ethical ***AI deployments***. Happy learning as you continue to explore and build with ***Microsoft Foundry*** and ***Fabric IQ***! 
