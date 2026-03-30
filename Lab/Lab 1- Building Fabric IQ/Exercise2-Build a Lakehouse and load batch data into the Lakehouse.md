@@ -75,9 +75,9 @@ This task demonstrates how to perform a batch load of multiple CSV files into th
   
      ![ADLSconnection](../media/ADLSconnection.png) 
      
-9. In the Select a bucket or directory window, choose the required container (e.g., fabriciqlabdata) and verify that all CSV files are visible.Click on **Next** to proceed.
+9. In the Select a bucket or directory window, select both the **customersloyalty** and **fabriciqlabdata** containers from the left panel, and then click on the **Next** button to proceed.
  
-    ![fabriclabdata](../media/fabriclabdata.png)
+    ![fabriclabdata](../media/fabriclabdata1.png)
 
 10. In the Transform to Delta screen,You will see a message indicating that the data is not in Delta format.Click on **Skip** to continue.
 

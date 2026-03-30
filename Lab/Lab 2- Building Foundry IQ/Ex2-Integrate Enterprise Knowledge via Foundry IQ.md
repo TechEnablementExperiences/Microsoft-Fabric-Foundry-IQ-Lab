@@ -9,9 +9,9 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 - Internal Policy Documents  
 - Campaign and Marketing Materials  
 
-**Foundry IQ** provides permission-aware, citation-backed grounding by connecting to these knowledge sources — ensuring that agent responses are both secure and traceable.
+**Foundry IQ** provides permission-aware, citation-backed grounding by connecting to these knowledge sources - ensuring that agent responses are both secure and traceable.
 
-> *“The agent shouldn’t know everything — it should know who to ask.”*
+> *“The agent shouldn’t know everything - it should know who to ask.”*
 
 ## ✅ Outcome
 - Foundry IQ Knowledge Base configured  
