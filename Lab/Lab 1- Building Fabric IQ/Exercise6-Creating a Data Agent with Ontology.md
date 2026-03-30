@@ -12,7 +12,8 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 - Trusted and explainable responses powered by governed business context
 
 ## Task 6.1: Create a data agent with an ontology as the data source
-1. Navigate to your **Fabric Workspace**.
+
+1. Navigate to your **Fabric Workspace**: **<inject key= "WorkspaceName" enableCopy="false"/>**.
 
 2. In your Fabric workspace, click on the **New item** button in the top command bar.
 
@@ -32,7 +33,7 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 
     ![datasource](../media/datasource.png)
 
-2. Choose the Ontology created in the previous lab, then click on **Add** and verify that the ontology is successfully attached.
+2. Choose the Ontology created in the previous lab: **FabricIQOntology**, then click on **Add** and verify that the ontology is successfully attached.
 
     ![Dataaddition](../media/Dataaddition.png)
 

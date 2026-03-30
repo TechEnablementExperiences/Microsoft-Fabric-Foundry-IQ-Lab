@@ -19,11 +19,11 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
 ## Task 5.1: Generate ontology from a semantic model
 
-1. After builnding the relationship in semantic model, click on **Generate Ontology** icon at top right menu.
+1. Open the **Fabric_IQ_SM** semantic model from the workspace **<inject key= "WorkspaceName" enableCopy="false"/>** in semantic model, click on **Generate Ontology** icon at top right menu.
 
     ![Step 11 Image](../media/SelectOntology.png)
 
-2. Select your Fabric **Workspace** and provide the Ontology **Name** field and then click on **Create** button.
+2. Select your Fabric **Workspace** and provide the Ontology **Name**: **FabricIQOntology** field and then click on **Create** button.
 
     ![Step 11 Image](../media/GenerateOntology.png)
 
@@ -61,7 +61,7 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
     ![EntityTypekey](../media/EntityTypekey.png)
 
-2. Select the key column, and then click **Save**.
+2. Select the all key column from the provided options, and then click **Save**.
 
     | Entity        | Key                      |
     |---------------|--------------------------|
@@ -93,11 +93,21 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
 5. If a relationship is not created automatically, select the required **entity** from the Entity Types list, then click on **Add relationship** from the top menu. In the dialog box, enter a **relationship name**, select the appropriate **Source entity type** and **Target entity type**, and then click on **Add relationship type** to create the relationship.
 
+    - Relationship Name: **feedback_provided_customer**
+    - Source Entity type: **feedback**
+    - Target entity type: **customer**
+
      ![Relationcnfgr2](../media/relationcnfgr2.png)
 
 6. In the Relationship configuration panel, select the appropriate **Workspace**, **Lakehouse**, and **Table**, then map the **Source column (CustomerID)** to the corresponding **Target entity key column (CustomerID)**, ensuring both sides are correctly linked, and finally click on **Create** to establish the relationship.
 
-    ![Relationshipcnfg3](../media/relationshipcnfg3.png)
+    - Workspace: **<inject key= "WorkspaceName" enableCopy="false"/>**
+    - Lakehouse: **<inject key= "Lakehouse" enableCopy="true"/>**
+    - Schema: **dbo**
+    - Table: **feedback**
+    - Source Column: **CustomerID**
+
+        ![Relationshipcnfg3](../media/relationshipcnfg3.png)
 
 7. Repeat above two steps for each and every entity to create proper relationship.
 

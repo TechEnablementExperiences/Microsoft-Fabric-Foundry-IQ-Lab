@@ -4,7 +4,7 @@
 
 This lab demonstrates how **Microsoft Fabric**, **Fabric IQ**, and **Foundry IQ** work together as a single, **end-to-end intelligence platform** to transform **raw enterprise data** into **trusted, business-aware AI actions**.
 
-Using the **Zava Retail scenario**, participants experience how a modern organization evolves from **fragmented data** and **delayed insights** into a **Frontier Organization** - one that is **human-led and AI-operated**.
+Using the **Zava Retail scenario**, participants experience how a modern organization evolves from **fragmented data** and **delayed insights** into a **Frontier Organization**—one that is **human-led and AI-operated**.
 
 Zava operates hundreds of **physical stores** alongside a rapidly growing **e-commerce platform**. Despite significant investments in **data and analytics**, leadership continues to face **critical challenges**:
 

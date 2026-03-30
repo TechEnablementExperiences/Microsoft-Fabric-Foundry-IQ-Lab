@@ -9,64 +9,59 @@
         	"RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%20Overview%20%26%20Instructions.md",
         	"Order": 0
       	},
-
-		{
-        	"RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/gettingstarted01.md",
-        	"Order": 1
-      	},
 		{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise1-Set%20up%20a%20Fabric%20workspace%20with%20proper%20capacity.md",
-        "Order": 2
+        "Order": 1
       	},
 
       {
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise2-Build%20a%20Lakehouse%20and%20load%20batch%20data%20into%20the%20Lakehouse.md",
-        "Order": 3
+        "Order": 2
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise3-Generating%20semantic%20model.md",
-        "Order": 4
+        "Order": 3
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise4-Create%20Operations%20Agent%20(Fabric%20IQ)%20and%20Connect%20Agent%20to%20Ontology.md",
-        "Order": 5
+        "Order": 4
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise5-Generate%20ontology%20from%20a%20semantic%20model.md",
-        "Order": 6
+        "Order": 5
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise6-Creating%20a%20Data%20Agent%20with%20Ontology.md",
-        "Order": 7
+        "Order": 6
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise1-Provision%20the%20AI%20Foundry%20Foundation.md",
-        "Order": 8
+        "Order": 7
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%202-%20Building%20Foundry%20IQ/Ex2-Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ.md",
-        "Order": 9
+        "Order": 8
       },
 
       {
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%202-%20Building%20Foundry%20IQ/Ex3-Build%20an%20intelligent%20agent%20with%20Tool%20Call.md",
-        "Order": 10
+        "Order": 9
       },
 
 			{
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%202-%20Building%20Foundry%20IQ/Ex4-Multi-Agent%20Orchestration%20and%20Validation.md",
-        "Order": 11
+        "Order": 10
       },
 
       {
         "RawFilePath": "https://raw.githubusercontent.com/TechEnablementExperiences/Microsoft-Fabric-Foundry-IQ-Lab/refs/heads/main/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise5-Observability%2C%20Evaluation%20%26%20Guardrails.md",
-        "Order": 12
+        "Order": 11
       }
 
 

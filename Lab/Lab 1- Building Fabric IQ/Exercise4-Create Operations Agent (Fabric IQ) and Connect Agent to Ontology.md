@@ -27,7 +27,7 @@ This task to creates an Eventhouse in the workspace to load real-time data.
 
     ![Eventhouse Creation](../media/EventhouseCreate.png)
 
-3. Provide proper name and click the **Apply** button to create the Eventhouse
+3. Provide proper name as **Retail_Eventhouse** and click the **Apply** button to create the Eventhouse
 
     ![Eventhouse Name](../media/EventhouseName.png)
 
@@ -50,7 +50,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
    ![ESnavigation](../media/ESnavigation.png)
 
-4. The **New Eventstream** dialog box will appear, Enter the name as **`Inventory_ES`**, then click on **create**
+4. The **New Eventstream** dialog box will appear, Enter the name as **Inventory_ES**, then click on **create**
 
    ![EScreation](../media/EScreation.png)
 
@@ -165,12 +165,12 @@ In this task, you will configure a real-time data stream using Eventstream and c
 13. Verify that the Lakehouse is successfully attached:
 
 15. Locate the section in the notebook where the following parameters are defined:
-    - **Event Hub name**
     - **Connection string primary key**
+    - **Event Hub name**
 
 16. Replace these values with the details copied earlier from the Eventstream:
-    - Paste the **Event Hub name**
     - Paste the **Connection string primary key**
+    - Paste the **Event Hub name**
 
     ![NBconfiguration](../media/NBconfiguration.png)
 
@@ -185,11 +185,10 @@ In this task, you will configure a real-time data stream using Eventstream and c
     - Connection string primary key ✅  
     - Lakehouse name ✅  
 
-    > **Note:**  
-    > - Before running the notebook cells, ensure that the **Eventstream is in Active state**.
-    If the Eventstream is not active, the data will not be ingested and the table will not be created in the Eventhouse.
+        > **Note:** Before running the notebook cells, ensure that the **Eventstream is in Active state**.
+        If the Eventstream is not active, the data will not be ingested and the table will not be created in the Eventhouse.
 
-20. After updating the values, click on **Run this cell and all below** to execute the notebook.
+20. After updating the values go to first cell, click on **Run this cell and all below** to execute the notebook.
 
     ![runall](../media/runall.png)
 
@@ -215,14 +214,15 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
 3. In the database explorer, expand the **Tables** section and locate the **`inventory`** table from the available list.
 
+    >**Note:** If the table does not appear, please refresh the tab and try again.
+
      ![TablecheckingEH](../media/TablecheckingEH.png)
 
 4. In the left pane, under **KQL databases**, select your database (e.g., `Retail_EventHouse_queryset`). In the query editor, enter the following query to validate ingested data:
 
-     ```      
-       kql
-            inventory
-            | take 10 
+     ```kql    
+        inventory
+        | take 10 
      ```     
 
     ![EHquery](../media/EHquery.png)
@@ -239,11 +239,11 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
 ## Task 4.3: Create Operations Agent (Fabric IQ)
 1. Select Fabric Workspace and click **New Item**.
-2. In the search box type **Opertion** keyword to get Operation Agent. Click **Operation Agent**.
+2. In the search box type **Operations Agent** keyword to get Operation Agent. Click **Operation Agent**.
 
     ![Choose OperationAgent](../media/ChooseOperationAgent.png)
 
-3. New popup window will apear. Provide Operation Agent name and select workspace in the Location section. Click **Create**.
+3. New popup window will apear. Provide Operation Agent name as **Retail_OperationAgent** and select workspace in the Location section. Click **Create**.
 
     ![Choose OperationAgent](../media/NewOperationAgent.png)
 
@@ -336,53 +336,68 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
 2. Now action creation popup will appear to include action name and its description (It's mandatory and any short description you can provide). Also, user can pass parameter for explicit specification while taking action. Click **Create** to create custom action.
 
+    **Action Name:** Inventory_Action
+
+    **Action Description:** Inventory action is a custom action. When action is required, Activator will trigger this action to send a message/email to the authorized operation team.
+
     ![CreatingAction](../media/CreatingAction.png)
 
 3. Now, custom action will be created for operation agent.
 
-    ![ActionCreated](../media/ActionCreated.png)
-
 4. Action need to configure **Custom Action**. User need to click **Connect** for configuration.
 
-5. In custom action configuration pan, user need to choose **Workspace**, **Activator** (if not available, select and click **New activator**). 
+    ![ActionCreated](../media/ActionCreated.png)
 
-    ![ActionConfiguration](../media/ActionConfiguration.png)
+5. Configure Custom Action - Activator Setup. Follow the steps below to configure the activator for your custom action:
+    - In the Workspace dropdown, select **<inject key= "WorkspaceName" enableCopy="false"/>**.
+    - Under Activator, choose Create a new item.
+    - In the New item name field, enter **Inventory_Activator**.
+    - Click on Create activator to complete the setup.
 
-   - Click **Create a connection** button to get connection details for activator.
+        >**Note:** Ensure the correct workspace is selected before creating the activator.
+
+        ![ActionCreated](../media/customitem.png)
+
+6. In custom action configuration pan, user need to choose **Workspace**, **Activator** (if not available, select and click **New activator**). 
+
+    - Click **Create a connection** button to get connection details for activator.
    - After the connection is created, copy the connection string and save at safe place.
    - Click **Open flow builder** to open the PowerAutomate flow in a separate browser tab.
-6. User can see 2nd tab for PowerAutomate in the browser window.
+
+        ![ActionConfiguration](../media/ActionConfiguration.png)
+
+7. User can see 2nd tab for PowerAutomate in the browser window.
     ![Different Tab PowerAutomate](../media/DifferentTabPowerAutomate.png)
 
-7. In the PowerAutomate flow page, click **Activator** action to open its properties page.
+8. In the PowerAutomate flow page, click **Activator** action to open its properties page.
     - Paste the connection string which was copied.
-    - Sign in to the account for proper authorization if not connected.
+    - Sign in to your account for proper authorization if not already connected. Click on Change connection, select Add new, and then click Sign in to proceed.
 
-    ![PowerAutomateActivatorSetting](../media/PowerAutomateActivatorSetting.png)
+        ![PowerAutomateActivatorSetting](../media/PowerAutomateActivatorSetting.png)
 
-8. Only the activator will not work here. so use should add output action.
+9. Only the activator will not work here. so use should add output action.
 
-9. Click "'+'" (available below activator action) to insert new action.
+10. Click "'+'" (available below activator action) to insert new action.
 
     ![NewItemPowerAutomate](../media/NewItemPowerAutomate.png)
 
-10. In action selection pan, please search **Team** to establich Team Chat. Click **See all** to visualize all actions for Team.
+11. In action selection pan, please search **Team** to establich Team Chat. Click **See all** to visualize all actions for Team.
 
     ![FindTeamAction](../media/FindTeamAction.png)
 
-11. Select **Get messages in chat** from the list. This will help the **Activator** action to post messages in teams.
+12. Select **Get messages in chat** from the list. This will help the **Activator** action to post messages in teams.
 
     ![GetMessageChat](../media/GetMessageChat.png)
 
-12. The User needs to authorize Teams by providing an account for message communication.
+13. The User needs to authorize Teams by providing an account for message communication.
 
     ![SignInAccountForTeam](../media/SignInAccountForTeam.png)
 
-13. Click **Sign in** to authorize account **<inject key= "AzureAdUserEmail" enableCopy="true"/>**.
+14. Click **Sign in** to authorize account **<inject key= "AzureAdUserEmail" enableCopy="true"/>**.
 
     ![SelectingAccount](../media/SelectingAccount.png)
 
-14. Now configuration required for posting team message. Configure if property window open by default at left side or click action to open.
+15. Now configuration required for posting team message. Configure if property window open by default at left side or click action to open.
 
     - **Post as**: Flow bot (other options are MS Copilot studio agent, User, Custom value.)
     - **Post in**- Chat with flow bot (Other values are Channel, Group chat, Custom value.)
@@ -392,31 +407,31 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
         ![TeamPostConfiguration](../media/TeamPostConfiguration.png)   
 
-15. Click **Save** to save the flow activity. We can see successful message in the banner.
+16. Click **Save** to save the flow activity. We can see successful message in the banner.
 
     ![SaveFlow](../media/SaveFlow.png) 
 
-16. Select Fabric tab in the browser to see the Operation agent screen. Now **Apply** button will be enable.
+17. Select Fabric tab in the browser to see the Operation agent screen. Now **Apply** button will be enable.
     >Apply button will enable once flow saved successfully.
 
-17. Click **Apply** button to save Custom Action.
+18. Click **Apply** button to save Custom Action.
 
     ![SavingCustomAction](../media/SavingCustomAction.png)     
 
-18. Click **Save** button again in Operation Agent to generate Playbook.
+19. Click **Save** button again in Operation Agent to generate Playbook.
 
-19. Start the Operation Agent once Playbook generated successfully.
+20. Start the Operation Agent once Playbook generated successfully.
 
-20. Now we can see **Team** message sent by Operation Agent when we find any anomaly.
+21. Now we can see **Team** message sent by Operation Agent when we find any anomaly.
 
     ![FabricOA-TeamMessage](../media/FabricOA-TeamMessage.png)   
 
-21. To take action, we can click **Yes/No**. Click **Yes** to activate trigger and send message to respective team.
+22. To take action, we can click **Yes/No**. Click **Yes** to activate trigger and send message to respective team.
 
-22. Activator will acknowledge with below message. 
+23. Activator will acknowledge with below message. 
 
     ![ActivatorSuccessMessage](../media/ActivatorSuccessMessage.png)  
 
-23. After action taken by operation team, workflow will send confirmation message back.
+24. After action taken by operation team, workflow will send confirmation message back.
 
     ![WorkflowMessage](../media/WorkflowMessage.png)  

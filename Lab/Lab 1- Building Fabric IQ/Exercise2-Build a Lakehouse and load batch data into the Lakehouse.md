@@ -17,7 +17,7 @@ All ingested data is consolidated into **Microsoft OneLake**, eliminating data s
 ## Task 2.1: Building a Lakehouse
 In this task of the workshop, you will be creating a Lakehouse.
 
-1. Click on the Workspaces option and choose the workspace created in the earlier step to create a Lakehouse.
+1. Click on the Workspaces option and choose the workspace: **<inject key= "WorkspaceName" enableCopy="false"/>** created to create a Lakehouse.
 
     ![Workspace Selection](../media/WorkspaceSelection.png)
    

@@ -42,6 +42,8 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
 6. Paste **return-policies** in the Name field. From the dropdown, select the **storage account**, then select the container **returnpolicy**. Scroll down and select the **checkbox** to include embedding model. Under the Embedding model, click **Select model**, then click **Browse more models**.
 
+    **Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
+
     ![Step 6.png](../media/image19.png)
 
 7. Click on **text-embedding-ada-002**, then click on **Deploy**.
@@ -55,7 +57,9 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 9.png](../media/image23.png)
 
-10. Paste **product-catalog** in the Name field. From the dropdown, select **product-catalog-index**, then click on **Create**.
+10. Enter **product-catalog** in the Name field. From the dropdown, select **product-catalog-index**, then click on **Create**.
+
+    **Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
 
     ![Step 10.png](../media/image24.png)
 
@@ -66,15 +70,21 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 1.png](../media/image25.png)
 
-2. Navigate to **Microsoft Fabric**, click on **Workspace** and then click on **<inject key= "WorkspaceName" enableCopy="false"/>**
+2. Navigate to **Microsoft Fabric**, click on **Workspace** then select **<inject key= "WorkspaceName" enableCopy="false"/>** and click on **Manage access** button.
 
     ![Step 2.png](../media/image26.png)
 
-3. Click on **Filter dropdown**, then select **Lakehouse** and then click on **<inject key= "Lakehouse" enableCopy="false"/>**
+3. Click on **+ Add people or groups** button and enter the **<inject key= "searchServiceName" enableCopy="true"/>** and provide access as **Contributor** and click on **Add** button.
+
+4. Click on **x** button to close the window.
+
+    ![Step 2.png](../media/access01.png)
+
+5. Click on **Filter dropdown**, then select **Lakehouse** and then click on **<inject key= "Lakehouse" enableCopy="false"/>**
 
     ![Step 3.png](../media/image27.png)
 
-4. Copy the **Fabric Workspace ID** and the **Lakehouse ID** that appear before lakehouse and after lakehouse.
+6. Copy the **Fabric Workspace ID** and the **Lakehouse ID** that appear before lakehouse and after lakehouse.
 
     > You can find the Fabric Workspace ID in the URL. It is the unique string between two "/" characters after /groups/ in your browser.
     
@@ -82,11 +92,15 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 4.png](../media/image29.png)
 
-5. Navigate back to Microsoft Foundry, paste the previously copied **Fabric Workspace ID** and the **Lakehouse ID**, select **text-embedding-ada-002**, and then click on **Create**
+7. Navigate back to Microsoft Foundry, provide a Name for the knowledge source as: **customer-loyality-data** and paste the previously copied **Fabric Workspace ID** and the **Lakehouse ID**, select **text-embedding-ada-002**, and then click on **Create**
+
+    **Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
 
     ![Step 5.png](../media/image28.png)
 
-6. Review all the **Knowledge sources** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
+8. Review all the **Knowledge sources** in the Basic configuration section and name the **Knowledge source** as **foundry-lab-knowledgebase**. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
+
+    **Note:** If the knowledge source name cannot be edited, please leave it as is.
 
     ![Step 6.png](../media/image31.png)
 

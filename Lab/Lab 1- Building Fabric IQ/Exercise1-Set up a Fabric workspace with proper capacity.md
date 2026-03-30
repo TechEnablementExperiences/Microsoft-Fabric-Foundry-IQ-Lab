@@ -3,18 +3,18 @@ A dedicated **Microsoft Fabric** workspace is established to serve as the centra
 
 **Eva** (**Data Engineer**) is tasked by **Rupesh** to create a governed workspace where **Fabric IQ** artifacts can live securely.
 
-## Outcome
+## ✅ Outcome
 - Fabric-enabled Workspace created  
 - Capacity-backed environment configured  
-  - Workspace ready for:
-    - Lakehouse setup  
-    - Ontology creation  
-    - Data Agent development
+- Workspace ready for:
+  - Lakehouse setup  
+  - Ontology creation  
+  - Data Agent development
 
 In this section of the workshop, you will be logging into the Microsoft Fabric Portal and creating a new Fabric Workspace.
 
 ## Task 1.1: User login to Microsoft Fabric
-Using a web browser of your choice, please navigate to this Microsoft Fabric link: 'https://app.powerbi.com/home?experience=fabric-developer'
+Using a web browser of your choice, please navigate to this Microsoft Fabric link.
 
 1. Enter your AAD username **<inject key= "AzureAdUserEmail" enableCopy="true"/>** in the Email field, then click on the Submit button.
 

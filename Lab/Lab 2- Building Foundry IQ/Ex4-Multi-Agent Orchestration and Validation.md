@@ -120,7 +120,9 @@ This section demonstrates how individual agents are invoked and how they operate
 
 2. Enter prompt `Hey! I'm planning to paint my living room but I'm not sure which color would look best. Can you recommend some paint shades?,` then click on **Send button**.
 
-    ![Step 1.png](../media/image70.png)
+    **Note**: If the agent asks for approval, expand the dropdown and select **Always approve all tools.**
+
+      ![Step 1.png](../media/image70.png)
 
 3. The **response** of the agents can be seen on the right side (See image pointer/box 1). You can also see the **called Agents** during the process on the right side and in the workflow (See image pointers/boxes 2 and 3).
 
