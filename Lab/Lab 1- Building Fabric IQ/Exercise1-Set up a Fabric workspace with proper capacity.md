@@ -6,10 +6,10 @@ A dedicated **Microsoft Fabric** workspace is established to serve as the centra
 ## ✅ Outcome
 - Fabric-enabled Workspace created  
 - Capacity-backed environment configured  
-- Workspace ready for:
-  - Lakehouse setup  
-  - Ontology creation  
-  - Data Agent development
+  - Workspace ready for:
+    - Lakehouse setup  
+    - Ontology creation  
+    - Data Agent development
 
 In this section of the workshop, you will be logging into the Microsoft Fabric Portal and creating a new Fabric Workspace.
 
