@@ -75,7 +75,7 @@ This task demonstrates how to perform a batch load of multiple CSV files into th
   
      ![ADLSconnection](../media/ADLSconnection.png) 
      
-9. In the Select a bucket or directory window, select both the **customersloyalty** and **fabriciqlabdata** containers from the left panel, and then click on the **Next** button to proceed.
+9. In the Select a bucket or directory window, select both the **returnpolicy** and **fabriciqlabdata** containers from the left panel, and then click on the **Next** button to proceed.
  
     ![fabriclabdata](../media/fabriclabdata2.png)
 
