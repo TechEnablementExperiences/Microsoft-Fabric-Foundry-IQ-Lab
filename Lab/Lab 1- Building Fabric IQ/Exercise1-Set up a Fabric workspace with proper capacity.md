@@ -14,7 +14,7 @@ A dedicated **Microsoft Fabric** workspace is established to serve as the centra
 In this section of the workshop, you will be logging into the Microsoft Fabric Portal and creating a new Fabric Workspace.
 
 ## Task 1.1: User login to Microsoft Fabric
-Using a web browser of your choice, please navigate to this Microsoft Fabric link.
+Using a web browser of your choice, please navigate to this Microsoft Fabric link: 'https://app.powerbi.com/home?experience=power-bi'
 
 1. Enter your AAD username **<inject key= "AzureAdUserEmail" enableCopy="true"/>** in the Email field, then click on the Submit button.
 
