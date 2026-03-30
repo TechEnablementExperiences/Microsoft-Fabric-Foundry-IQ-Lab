@@ -3,7 +3,7 @@ A dedicated **Microsoft Fabric** workspace is established to serve as the centra
 
 **Eva** (**Data Engineer**) is tasked by **Rupesh** to create a governed workspace where **Fabric IQ** artifacts can live securely.
 
-## ✅ Outcome
+## Outcome
 - Fabric-enabled Workspace created  
 - Capacity-backed environment configured  
   - Workspace ready for:
