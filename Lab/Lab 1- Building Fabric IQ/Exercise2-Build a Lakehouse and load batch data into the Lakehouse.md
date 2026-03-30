@@ -60,8 +60,6 @@ This task demonstrates how to perform a batch load of multiple CSV files into th
 
 5. In the **New shortcut** window,click on **New connection**.
 
-    ![Newconnection](../media/Newconnection.png)
-
 6. Under **Connection settings**, paste the Storage Account endpoint in the **URL** field: **<inject key= "storageDfsEndpoint" enableCopy="true"/>**.
    > **Note:** Wait for the screen to load. The connection details may be auto-populated.
 
