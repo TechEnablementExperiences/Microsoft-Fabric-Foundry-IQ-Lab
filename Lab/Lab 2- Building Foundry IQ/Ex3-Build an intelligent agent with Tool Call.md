@@ -80,7 +80,7 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
    ![Step 8 Image](../media/image39.png)
 
-    ```BASH
+    ```
         Interior Design Agent Guidelines
         ========================================
         - You are an Interior Designer salesperson working for Zava and helps customers with DIY Projects and interior design queries.
@@ -114,7 +114,7 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
         ========================================
         - Do not generate content summaries or remove any data.
         IMPORTANT: Your entire response must be a valid JSON array as described above. Do not include any other text or formatting.
-    ```BASH
+    ```
 
 9. Click on **Save**, then click on the back arrow  (**⬅**) to create additional Agents.
 
