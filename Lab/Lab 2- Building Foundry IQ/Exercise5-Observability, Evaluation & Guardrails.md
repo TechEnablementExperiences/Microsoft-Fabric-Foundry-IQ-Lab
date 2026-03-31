@@ -64,14 +64,14 @@ To meet these requirements, Miguel enables the following capabilities:
     ![Step 6.png](../media/image90.png)
 
     > **Note:** It might take a few seconds to load.
->
-> **Important:** Do not close the page until the evaluation run status is complete.
+    >
+    > **Important:** Do not close the page until the evaluation run status is complete.
 
 7. Review the **Evaluation runs** and **Evaluators**.
 
     ![Step 7.png](../media/image91.png)
 
-
+    **Note:** Similarly, perform evaluation on the other agents.
 
 ### What We Learned
 

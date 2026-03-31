@@ -343,8 +343,8 @@ Configured data sources and services for the solution include:
 |-------------|-------------|
 | Inventory Data Agent | Configured the Fabric Data Agent for inventory data |
 | Product Catalog | Stored and managed in Azure Cosmos DB |
-| Return Policy Documents | Stored in Azure Blob Storage |
-| Customer Loyalty Data | Stored in Microsoft Fabric OneLake |
+| Return Policy Documents | Stored in Microsoft Fabric OneLake |
+| Customer Loyalty Data | Stored in Azure Blob Storage
 
 These sources allow agents to combine **business intelligence with enterprise knowledge**.
 

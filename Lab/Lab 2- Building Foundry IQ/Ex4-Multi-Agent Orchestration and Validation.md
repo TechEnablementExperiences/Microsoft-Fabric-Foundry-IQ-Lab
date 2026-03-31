@@ -103,16 +103,26 @@ All agent interactions are orchestrated by the **Supervisor Agent** to ensure co
 
 6. Review the **workflow**, click on **Publish** dropdown, then click on **Publish as workflow app**.
 
-    ![Step 6.png](../media/image67.png)
+    **Note:** You may see the workflow in a **horizontal layout** by default. If you want to change it to vertical, click on the Vertical Layout button.
+
+      ![Step 6.png](../media/image67.png)
 
 7. Select the checkbox, then click on **Publish**.
 
     ![Step 7.png](../media/image68.png)
 
+    > It might take few seconds to publish workflow in Foundry.
+  
+8. The workflow published successfully. Click on **Close**.
+  
+    ![Step 8.png](../media/image99.png)
 
 ### Task 4.2: Validate the end-to-end agentic workflow
 
 This section demonstrates how individual agents are invoked and how they operate.
+
+**Note:** This section demonstrates how individual agents are invoked and how they operate.
+Note: Before validating the workflow, test the individual agents and approve the tools. Tool approval cannot be completed within the workflow preview and may result in errors. Also, this feature is currently in preview.
 
 1. Click on **Preview**.
 
@@ -126,6 +136,10 @@ This section demonstrates how individual agents are invoked and how they operate
 
 3. The **response** of the agents can be seen on the right side (See image pointer/box 1). You can also see the **called Agents** during the process on the right side and in the workflow (See image pointers/boxes 2 and 3).
 
+    > It might take few seconds to get response.
+
+    > The response provides suitable paint shade recommendations for the living room along with brief descriptions. The expected outcome is to suggest relevant and aesthetically pleasing colors that help the user make an informed decision.
+
     ![Step 3.png](../media/image71.png)
 
 4. Enter prompt  `Can you tell me Joe's customer loyalty tier and discount?`, then click on **Send button**.
@@ -133,6 +147,10 @@ This section demonstrates how individual agents are invoked and how they operate
     ![Step 4.png](../media/image72.png)
 
 5. The **response** of the agents can be seen on the right side (See image pointer/box 1). Note that we have received this response in JSON format.  You can also see the **called Agents** during the process on the right side and in  the workflow (See image pointers/boxes 2 and 3).
+
+    > It might take few seconds to get response.
+
+    > The response displays Joe’s loyalty details, including a personalized message and discount. The expected outcome is to identify Joe’s loyalty tier as Platinum and return the 32.40% discount.
 
     ![Step 5.png](../media/image73.png)
 
@@ -144,7 +162,9 @@ This section demonstrates how individual agents are invoked and how they operate
 
     ![Step 7.png](../media/image75.png)
 
+    > It might take few seconds to get response.
 
+    > The response displays the inventory details for product ID PROD0011 across multiple store locations, including quantities and last restock dates. The expected outcome is to provide accurate stock availability information for the requested product.
 
 ### Task 4.3: Inspect the execution path using the Trace tool
 
@@ -153,6 +173,8 @@ This section demonstrates how individual agents are invoked and how they operate
     ![Step 1.png](../media/image76.png)
 
 2. Select the **foundryiq-appinsight** as Application insights resource name, then click on **Connect**.
+
+    **Note:** If you do not see Application Insights, click on Create new and create an Application Insights resource.
 
     ![Step 2.png](../media/image77.png)
 

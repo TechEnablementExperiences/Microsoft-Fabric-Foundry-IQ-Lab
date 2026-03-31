@@ -43,15 +43,23 @@ Miguel provisions the following core components within Microsoft Foundry:
 
     ![Deploy model](../media/image11.png)
 
-4. Again navigate to the **Models** section to deploy embedding model, then click on **Deploy base models**.
+4. Once the model is deployed, open the model **playground**.
+   
+   ![View Deployed model](../media/image97.png)
+
+5. Click on **Details** tab to view the **key**, **endpoint**, and **other model information**.
+
+   ![View information](../media/image98.png)
+
+6. Again navigate to **Models** section to deploy embedding model, then click on **Deploy base models**.
 
     ![Select Models](../media/image8.png)
 
-5. Search for **text-embedding-ada**, then click on **text-embedding-ada-002**.
+7. Search **text-embedding-ada** then click on **text-embedding-ada-002**.
 
     ![Step 5.png](../media/image12.png)
 
-6. Click on the **Deploy** dropdown and select **Default settings**.
+8. Click on the **Deploy** dropdown and select **Default settings**.
 
     ![Step 6.png](../media/image13.png)
 

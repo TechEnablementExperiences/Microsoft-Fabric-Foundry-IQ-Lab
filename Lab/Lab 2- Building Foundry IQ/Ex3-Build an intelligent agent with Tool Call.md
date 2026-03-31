@@ -201,7 +201,7 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
     ![Step 1.png](../media/image48.png)
 
-2. Click on **Add**, then click on **Connect to Foundry IQ**.
+2. Click on **Add** from the **Knowledge** dropdown, then click on **Connect to Foundry IQ**.
 
     ![Step 2.png](../media/image49.png)
 
@@ -211,17 +211,21 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
 4. Review the connected **Foundry IQ knowledge base**, then click on **Save** and click on **⬅** to configure Foundry IQ knowledge base to another agent.
 
+    **Note:** By default, Web Search is added. Click on the three dots and remove it before proceeding.
+
     ![Step 4.png](../media/image51.png)
 
 5. Click on **Sales-Associate-Agent**.
 
     ![Step 5.png](../media/image52.png)
 
-6. Click on **Add**, then select **foundry-lab-knowledgebase**.
+6. Click on **Add** from the **Knowledge** dropdown, then select **foundry-lab-knowledgebase**.
 
     ![Step 6.png](../media/image53.png)
 
 7. Review the connected **Foundry IQ knowledge base**, click on **Save** and click on the back arrow (**⬅**).
+
+    **Note:** By default, Web Search is added. Click on the three dots and remove it before proceeding.
 
     ![Step 7.png](../media/image54.png)
 
@@ -234,13 +238,15 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
 2. Under the Tools dropdown,Click on **Add**, then click on **Browse all tools**.
 
+    **Note:** By default, Web Search is added. Click on the three dots and remove it before proceeding.
+
     ![Step 2.png](../media/image58.png)
 
 3. Click on **Fabric Data Agent**, then click on **Add tool**.
 
     ![Step 3.png](../media/image59.png)
 
-4. Navigate to **Microsoft Fabric**, click on **Workspace** and click on **TechExperience-Lab001**
+4. Navigate to **Microsoft Fabric**, click on **Workspace**: **<inject key= "WorkspaceName" enableCopy="true"/>**.
 
     ![Step 4.png](../media/image26.png)
 

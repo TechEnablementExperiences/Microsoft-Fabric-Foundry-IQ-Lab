@@ -40,11 +40,11 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 5.png](../media/image18.png)
 
-6. Paste **return-policies** in the Name field. From the dropdown, select the **storage account**, then select the container **returnpolicy**. Scroll down and select the **checkbox** to include embedding model. Under the Embedding model, click **Select model**, then click **Browse more models**.
+6. Paste **customer-loyalty-data** in the Name field. From the dropdown, select the **storage account** you want to use, then select the container **customersloyalty**. Scroll down and select the **checkbox** to include embedding model. Under the Embedding model, click **Select model**.
 
     **Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
 
-    ![Step 6.png](../media/image19.png)
+    ![Step 6.png](../media/image92.png)
 
 7. Click on **text-embedding-ada-002**, then click on **Deploy**.
 
@@ -92,17 +92,17 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 4.png](../media/image29.png)
 
-7. Navigate back to Microsoft Foundry, provide a Name for the knowledge source as: **customer-loyality-data** and paste the previously copied **Fabric Workspace ID** and the **Lakehouse ID**, select **text-embedding-ada-002**, and then click on **Create**
+7. Navigate back to Microsoft Foundry, enter name as **return-policy**, paste the previously copied **Fabric Workspace ID** and the **Lakehouse ID**, select **text-embedding-ada-002**, and then click on **Create**.
 
     **Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
 
-    ![Step 5.png](../media/image28.png)
+    ![Step 5.png](../media/image95.png)
 
-8. Review all the **Knowledge sources** in the Basic configuration section and name the **Knowledge source** as **foundry-lab-knowledgebase**. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
+8. Review all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
 
     **Note:** If the knowledge source name cannot be edited, please leave it as is.
 
-    ![Step 6.png](../media/image31.png)
+    ![Step 6.png](../media/image96.png)
 
 ### What We Learned
 
