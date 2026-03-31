@@ -117,9 +117,9 @@ This task demonstrates how to perform a batch load of multiple CSV files into th
    - The notebook opens successfully
    - All code cells are visible and properly loaded
 
-   > **Note:**  
-   > - The **URL** represents the Storage Account.  
-   > - Ensure correct values are provided to avoid    connection errors.
+        > **Note:**  
+        > - The **URL** represents the Storage Account.  
+        > - Ensure correct values are provided to avoid connection errors.
 
 #### Step 3: Configure Notebook
 

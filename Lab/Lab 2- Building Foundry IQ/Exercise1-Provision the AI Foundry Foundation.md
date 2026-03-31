@@ -17,13 +17,15 @@ Miguel provisions the following core components within Microsoft Foundry:
 ### Task 1.1: Provision a Foundry Hub and Project 
 
 
-1. Copy the following URL and open it in a new browser tab to access Microsoft Foundry: **<inject key= "aiFoundryPortalUrl" enableCopy="true"/>**
+1. Copy the following URL and open it in a new browser tab to access Microsoft Foundry: **<inject key= "aiFoundryPortalUrl" enableCopy="true"/>**.
+
+    > **Note:** After opening the link, you may be prompted with a **Get Started or Sign in** screen. Click Sign in or Get Started to proceed.
+    > If you enable the New Foundry toggle, a pop-up may appear asking you to select a project - choose the available **project** and click Let’s go to continue.
 
 2. Click on **Build** to create agents, deploy models, and build workflows.
 
     > **Note:** Make sure the **New Foundry** toggle is turned On.
     > This setting is required to use the latest Foundry portal UI.
-    > If you are redirected to a sign-in page, choose Sign in to access Foundry.
 
      ![Step 7 Image](../media/image7.png)
 

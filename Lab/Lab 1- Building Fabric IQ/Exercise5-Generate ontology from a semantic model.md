@@ -19,7 +19,7 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
 ## Task 5.1: Generate ontology from a semantic model
 
-1. Open the **Fabric_IQ_SM** semantic model from the workspace **<inject key= "WorkspaceName" enableCopy="false"/>** in semantic model, click on **Generate Ontology** icon at top right menu.
+1. Open the **FabricIQ_SM** semantic model from the workspace **<inject key= "WorkspaceName" enableCopy="false"/>** in semantic model, click on **Generate Ontology** icon at top right menu.
 
     ![Step 11 Image](../media/SelectOntology.png)
 

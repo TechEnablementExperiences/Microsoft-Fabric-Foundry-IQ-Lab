@@ -19,9 +19,9 @@ To simplify analytical access and enable business-driven insights, EVA generates
 2. In the New item creation pane, use the search bar to type **"Semantic model"**.
 3. Select the **Semantic model** card in the search results and click on it to initiate creation.
    
-    ![SemanticModel](../media/SemanticModel.png)
+   >**Note**: If any pop-up appears stating "**Upgrade to a paid Power BI license**" please click on **Try Free Button** to continue.If any additional pop-ups appear, close them and repeat the above steps if required to create the semantic model.
 
-    >**Note**: If any pop-up appears stating "Upgrade to a paid Power BI license" please click on **Try Free Button** to continue.If any additional pop-ups appear, close them and repeat the above steps if required to create the semantic model.
+    ![SemanticModel](../media/SemanticModel.png)
 
 ## Task 3.2: Choose required entities/tables for the semantic model 
 
@@ -33,7 +33,7 @@ To simplify analytical access and enable business-driven insights, EVA generates
 
     ![Lakehouse](../media/LakeshouseSelection.png)
 
-3. Now, you will redirected to creation of Semantic Model. Provide the Semantic model name **Fabric_IQ_SM**  and select workspace.
+3. Now, you will redirected to creation of Semantic Model. Provide the Semantic model name **FabricIQ_SM**  and select workspace.
 
 4. In the table selection window, expand each schema and click on **Select all** to include all available tables, and make sure to deselect **storeinventory** table, and then click on **Confirm**.
 

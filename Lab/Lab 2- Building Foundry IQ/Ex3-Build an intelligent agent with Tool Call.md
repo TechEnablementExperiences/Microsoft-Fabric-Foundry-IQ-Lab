@@ -236,6 +236,8 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
 3. Click on **Fabric Data Agent**, then click on **Add tool**.
 
+    >**Note:** If the **Fabric Data Agent** tool is not listed under Configured, switch to the **Catalog** tab and search for the Fabric Data Agent tool.
+
     ![Step 3.png](../media/image59.png)
 
 4. Navigate to **Microsoft Fabric**, click on **Workspace**: **<inject key= "WorkspaceName" enableCopy="true"/>**.
