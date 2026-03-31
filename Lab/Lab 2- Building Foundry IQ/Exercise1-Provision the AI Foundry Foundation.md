@@ -23,6 +23,7 @@ Miguel provisions the following core components within Microsoft Foundry:
 
     > **Note:** Make sure the **New Foundry** toggle is turned On.
     > This setting is required to use the latest Foundry portal UI.
+    > If you are redirected to a sign-in page, choose Sign in to access Foundry.
 
      ![Step 7 Image](../media/image7.png)
 
