@@ -78,7 +78,9 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
 7. Once the agent is created, you will be redirected to the playground page of the agent. From the Model drop-down, select **gpt-4o** and paste below following instructions in the **Instructions** section.
 
-    ```
+   ![Step 8 Image](../media/image39.png)
+
+    ```BASH
         Interior Design Agent Guidelines
         ========================================
         - You are an Interior Designer salesperson working for Zava and helps customers with DIY Projects and interior design queries.
@@ -112,23 +114,21 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
         ========================================
         - Do not generate content summaries or remove any data.
         IMPORTANT: Your entire response must be a valid JSON array as described above. Do not include any other text or formatting.
-    ```
+    ```BASH
 
-    ![Step 8 Image](../media/image39.png)
-
-8. Click on **Save**, then click on the back arrow  (**⬅**) to create additional Agents.
+9. Click on **Save**, then click on the back arrow  (**⬅**) to create additional Agents.
 
     ![Step 9.png](../media/image40.png)
 
-9. Click on **Create agent**.
+10. Click on **Create agent**.
 
     ![Step 10.png](../media/image37.png)
 
-10. Paste **Rewards-Campaign-Agent** as Agent name and then click on **Create**.
+11. Paste **Rewards-Campaign-Agent** as Agent name and then click on **Create**.
 
     ![Step 11 Image](../media/image41.png)
 
-11. Select **gpt-4o** from the drop down and paste below following instructions in the **Instructions** section.
+12. Select **gpt-4o** from the drop down and paste below following instructions in the **Instructions** section.
 
     ```
     Apply personalized discounts to customers based on their loyalty information and explain the applicable Black Friday promotional tiers using the provided knowledge sources.
@@ -155,19 +155,19 @@ Miguel creates a **Supervisor Agent** capable of orchestrating insights across e
 
     ![Step 12 Image](../media/image42.png)
 
-12. Click on **Save** and then click on the back arrow (**⬅**) to create the next Agent.
+13. Click on **Save** and then click on the back arrow (**⬅**) to create the next Agent.
 
     ![Step 13 png](../media/image43.png)
 
-13. Click on **Create agent**.
+14. Click on **Create agent**.
 
     ![Step 14.png](../media/image37.png)
 
-14. Paste **Inventory-Agent** as Agent name and then click on **Create**.
+15. Paste **Inventory-Agent** as Agent name and then click on **Create**.
 
     ![Step 15 Image](../media/image45.png)
 
-15. Select **gpt-4o** from the drop down and paste below following instructions in the **Instructions** section.
+16. Select **gpt-4o** from the drop down and paste below following instructions in the **Instructions** section.
 
     ```
     You are Inventory check agent,
