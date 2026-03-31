@@ -20,7 +20,7 @@ To address this need, EVA enhances the data model with:
 - RTI dashboard supports live decisions
 
 ## Task 4.1: Create an Eventhouse for real-time data
-This task to creates an Eventhouse in the workspace to load real-time data. 
+This task creates an Eventhouse in the workspace to load real-time data. 
 
 1. Follow the above steps to navigate and choose the appropriate Fabric Workspace.
 2. Click **New Item** to create Eventhouse.
@@ -31,7 +31,7 @@ This task to creates an Eventhouse in the workspace to load real-time data.
 
     ![Eventhouse Name](../media/EventhouseName.png)
 
-4. Wait for a few moments for the Eventhouse to be created. Once created, you will be redirect to the dashboard. KQL database will be created by default.
+4. Wait for a few moments for the Eventhouse to be created. Once created, you will be redirected to the dashboard. KQL database will be created by default.
 
     ![Eventhouse Dashboard](../media/EventhouseDashboard.png)
 
@@ -95,10 +95,10 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
     ![publish](../media/publish.png) 
 
-> **Note:**  
-> - Ensure you are in **Edit mode** before making changes.  
-> - The destination configuration will route incoming streaming data to the Eventhouse table.  
-> - The table `inventory` will be created automatically during data ingestion. 
+      > **Note:**  
+      > - Ensure you are in **Edit mode** before making changes.  
+      > - The destination configuration will route incoming streaming data to the Eventhouse table.  
+      > - The table `inventory` will be created automatically during data ingestion. 
 
 #### Step 3: Retrieve Connection Details (SAS Authentication)
 
@@ -118,9 +118,9 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
    ![endpointdetails](../media/endpointdetails.png)
 
-> **Note:**  
-> - These credentials allow external applications (like notebooks) to push data into Eventstream.  
-> - Ensure values are copied correctly without extra spaces.
+     > **Note:**  
+     > - These credentials allow external applications (like notebooks) to push data into Eventstream.  
+     > - Ensure values are copied correctly without extra spaces.
 
 #### Step 4: Generate Real-Time Data using Notebook
 
@@ -164,23 +164,23 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
 13. Verify that the Lakehouse is successfully attached:
 
-15. Locate the section in the notebook where the following parameters are defined:
+14. Locate the section in the notebook where the following parameters are defined:
     - **Connection string primary key**
     - **Event Hub name**
 
-16. Replace these values with the details copied earlier from the Eventstream:
+15. Replace these values with the details copied earlier from the Eventstream:
     - Paste the **Connection string primary key**
     - Paste the **Event Hub name**
 
     ![NBconfiguration](../media/NBconfiguration.png)
 
-17. Next, locate the query or code section where the Lakehouse name is **<inject key= "Lakehouse" enableCopy="false"/>**.
+16. Next, locate the query or code section where the Lakehouse name is **<inject key= "Lakehouse" enableCopy="false"/>**.
 
-18. Replace the existing Lakehouse name with your **Lakehouse name**: **<inject key= "Lakehouse" enableCopy="true"/>**.
+17. Replace the existing Lakehouse name with your **Lakehouse name**: **<inject key= "Lakehouse" enableCopy="true"/>**.
 
     ![NBchanges](../media/NBchanges.png)
 
-19. Ensure all required values are updated correctly:
+18. Ensure all required values are updated correctly:
     - Event Hub name ✅  
     - Connection string primary key ✅  
     - Lakehouse name ✅  
@@ -188,19 +188,19 @@ In this task, you will configure a real-time data stream using Eventstream and c
         > **Note:** Before running the notebook cells, ensure that the **Eventstream is in Active state**.
         If the Eventstream is not active, the data will not be ingested and the table will not be created in the Eventhouse.
 
-20. After updating the values go to first cell, click on **Run this cell and all below** to execute the notebook.
+19. After updating the values go to first cell, click on **Run this cell and all below** to execute the notebook.
 
     ![runall](../media/runall.png)
 
-21. The notebook will:
+20. The notebook will:
     - Generate real-time streaming data
     - Send data to Eventstream using the custom endpoint
     - Automatically load data into the Eventhouse table (`inventory`)
 
-> **Note:**  
-> - Make sure there are no extra spaces while copying values.  
-> - Incorrect Event Hub details will result in no data ingestion.  
-> - Ensure the Lakehouse name is updated correctly to avoid query errors.
+        > **Note:**  
+        > - Make sure there are no extra spaces while copying values.  
+        > - Incorrect Event Hub details will result in no data ingestion.  
+        > - Ensure the Lakehouse name is updated correctly to avoid query errors.
 
 #### Step 5: Validate Data in Eventhouse
 
@@ -227,7 +227,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
     ![EHquery](../media/EHquery.png)
 
-5.Select the query and click on the Run button at the top to execute the query.
+5.Select the query and click on the **Run** button at the top to execute the query.
 
 6.Observe the results displayed at the bottom:
   - A table with columns such as StoreId, ProductID, Quantity, etc.
@@ -243,15 +243,15 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
     ![Choose OperationAgent](../media/ChooseOperationAgent.png)
 
-3. New popup window will apear. Provide Operation Agent name as **Retail_OperationAgent** and select workspace in the Location section. Click **Create**.
+3. New popup window will appear. Provide Operation Agent name as **Retail_OperationAgent** and select workspace in the Location section. Click **Create**.
 
     ![Choose OperationAgent](../media/NewOperationAgent.png)
 
-4. After create, Operation Agent will load its blank play area. 
+4. After create, the Operation Agent will load its blank play area. 
 
     ![OA PlayArea](../media/OperationAgentPayArea.png)
 
-5. Opertion Agent has sections like **Business goal**, **Agent instructions**, **Knowledge**, **Action**. Right side we have **Agent playbook** area.
+5. Operation Agent has sections like **Business goal**, **Agent instructions**, **Knowledge**, **Action**. Right side we have **Agent playbook** area.
 
 6. Provide **Business goal** for RTI.
 
@@ -265,7 +265,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
    ```
     ![BusinessGoal](../media/BusinessGoal.png)
 
-7. Provide **Agent instuction** which agent will follow all the instructions and take action.
+7. Provide **Agent instruction** which agent will follow all the instructions and take action.
 
     ```
     Objective
@@ -299,13 +299,13 @@ In this task, you will configure a real-time data stream using Eventstream and c
     ```
     ![AgentInstructions](../media/AgentInstructions.png)
 
-8. If instruction length is bigger then hold & drag bottom right corner to expand the window. So that, all instruction can be visible.
+8. If instruction length is bigger than - hold & drag bottom right corner to expand the window. So that, all instruction can be visible.
 
 9. Add knowledge base in the **Knowledge** section. Click **Add data**.
 
     ![AddKnowledge](../media/AddKnowledge.png)
 
-10. Chose **Eventhouse** to add in the knowledge section
+10. Choose **Eventhouse** to add in the knowledge section
 
     ![KQLDatabase](../media/OA-KB-KQLDatabase.png)
 
@@ -317,7 +317,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
     ![GeneratingPlaybook](../media/GeneratingPlaybook.png)
 
-12. After few moment, Agent playbook will be generated with all its step by step action details.
+12. After a few moment, the Agent playbook will be generated with all its step by step action details.
 
     **Playbook - Business glossary & Objects**
         ![Paybook-I](../media/Paybook-I.png)
@@ -330,7 +330,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
 14. Now, Operation Agent is ready to track, monitor, and sending alert message if any anomaly detected.
 
 ## Task 4.4: Observe agent behavior in real-time
-1. Creating **Custom Action** with clicking **Add action**
+1. Create a **Custom Action** by clicking **Add action**
 
     ![ActionCreation](../media/ActionCreation.png)
 
@@ -344,7 +344,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
 3. Now, custom action will be created for operation agent.
 
-4. Action need to configure **Custom Action**. User need to click **Connect** for configuration.
+4. The action needs to be configured **Custom Action**. User need to click **Connect** for configuration.
 
     ![ActionCreated](../media/ActionCreated.png)
 
@@ -358,7 +358,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
         ![ActionCreated](../media/customitem.png)
 
-6. In custom action configuration pan, user need to choose **Workspace**, **Activator** (if not available, select and click **New activator**). 
+6. In custom action configuration pane, user need to choose **Workspace**, **Activator** (if not available, select and click **New activator**). 
 
     - Click **Create a connection** button to get connection details for activator.
    - After the connection is created, copy the connection string and save at safe place.
@@ -375,13 +375,13 @@ In this task, you will configure a real-time data stream using Eventstream and c
 
         ![PowerAutomateActivatorSetting](../media/PowerAutomateActivatorSetting.png)
 
-9. Only the activator will not work here. so use should add output action.
+9. Only the activator will not work here. so the user should add output action.
 
 10. Click "'+'" (available below activator action) to insert new action.
 
     ![NewItemPowerAutomate](../media/NewItemPowerAutomate.png)
 
-11. In action selection pan, please search **Team** to establich Team Chat. Click **See all** to visualize all actions for Team.
+11. In action selection pan, please search **Team** to establish Team Chat. Click **See all** to visualize all actions for Team.
 
     ![FindTeamAction](../media/FindTeamAction.png)
 
@@ -402,8 +402,8 @@ In this task, you will configure a real-time data stream using Eventstream and c
     - **Post as**: Flow bot (other options are MS Copilot studio agent, User, Custom value.)
     - **Post in**- Chat with flow bot (Other values are Channel, Group chat, Custom value.)
     - **Recipient** - Select account to get message
-    - **Message** - I have provided static message. We can create cutomize and dynamic message based on parameters.
-    - **Autorization** - Sign in account if not there.
+    - **Message** - I have provided static message. We can create cutomized and dynamic message based on parameters.
+    - **Authorization** - Sign in account if not there.
 
         ![TeamPostConfiguration](../media/TeamPostConfiguration.png)   
 
@@ -412,7 +412,7 @@ In this task, you will configure a real-time data stream using Eventstream and c
     ![SaveFlow](../media/SaveFlow.png) 
 
 17. Select Fabric tab in the browser to see the Operation agent screen. Now **Apply** button will be enable.
-    >Apply button will enable once flow saved successfully.
+    >Apply button will be enabled once flow saved successfully.
 
 18. Click **Apply** button to save Custom Action.
 
