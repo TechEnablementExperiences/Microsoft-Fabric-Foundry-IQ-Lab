@@ -31,7 +31,7 @@ THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY AND PRODUCT FEATURES AND FUNC
 
 > **Important:** This lab is structured as two stages (Fabric IQ + Foundry IQ). Complete each lab in order before moving to the next.  
 
-![archi](./media/Archinew.png)
+![archi](./media/Archinew1.png)
 
 This lab demonstrates how **Microsoft Fabric**, **Fabric IQ**, and **Foundry IQ** work together as a single, **end-to-end intelligence platform** to transform **raw enterprise data** into **trusted, business-aware AI actions**.
 
