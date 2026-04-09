@@ -1,6 +1,6 @@
 # Building Intelligent Solutions with Microsoft Fabric IQ & Foundry IQ – Hands-on Lab
 
-![Fabric IQ Architecture](./Lab/media/Archinew.png)
+![Fabric IQ Architecture](./Lab/media/Archinew1.png)
 
 This lab demonstrates how **Microsoft Fabric**, **Fabric IQ**, and **Foundry IQ** work together as a single, **end-to-end intelligence platform** to transform **raw enterprise data** into **trusted, business-aware AI actions**.
 
