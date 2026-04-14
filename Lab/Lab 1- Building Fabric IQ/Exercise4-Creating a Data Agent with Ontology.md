@@ -1,6 +1,6 @@
-# Exercise 6: Connecting ontology using data agent & AI Foundry
+# Exercise 4: 🤖 Creating a Data Agent with Ontology
 
-In this section, you will create a **Fabric Data Agent**, connect it to the Ont language queries to retrieve business insights from enterprise data.
+In this section, you will create a Fabric Data Agent and connect it to the ontology to enable natural language queries for retrieving business insights from enterprise data.
 
 **Serena (Data Analyst)** now asks:
 > *“Which stores had the highest stock outs and highest demand last quarter?”*
@@ -11,7 +11,7 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 - Cross-domain insights generated using natural language queries  
 - Trusted and explainable responses powered by governed business context
 
-## Task 6.1: Create a data agent with an ontology as the data source
+## Task 4.1: Create a data agent with an ontology as the data source
 
 1. Navigate to your **Fabric Workspace**: **<inject key= "WorkspaceName" enableCopy="false"/>**.
 
@@ -41,9 +41,9 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
      > - The Ontology acts as a semantic layer, helping the Data Agent understand the data context.  
      > - Ensure the correct ontology is selected to get accurate insights.
 
-## Task 6.2: Validate the data agent using natural language queries
+## Task 4.2: Validate the data agent using natural language queries
 
-1. Verify that the **Ontology (e.g., IQ_Ontology)** is successfully added under the **Data** tab in the Explorer pane.
+1. Verify that the **FabricIQOntology** is successfully added under the **Data** tab in the Explorer pane.
   
      ![Agentinstr](../media/Agentinstr.png)     
     

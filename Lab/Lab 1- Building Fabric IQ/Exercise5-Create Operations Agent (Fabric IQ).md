@@ -1,4 +1,4 @@
-# Exercise 4: Build Real-Time Intelligence and Operations Agent
+# Exercise 5: Build Real-Time Intelligence and Operations Agent
 
 In this section of the workshop, you will create an **Eventhouse**, ingest streaming events, and enable fast **KQL-based queries** to power live dashboards and support operational intelligence use cases.
 
@@ -9,9 +9,9 @@ To address this need, EVA enhances the data model with:
 - Streaming inventory updates  
 - An Operations Agent to detect and monitor anomalies in real time  
 
-> *“Don’t tell me about yesterday’s stock outs — tell me before they happen.”*
+    > *“Don’t tell me about yesterday’s stock outs — tell me before they happen.”*
 
-## ✅ Outcome
+## Outcome
 - Eventstream and Eventhouse successfully configured  
 - Real-time inventory monitoring enabled  
 - KQL-powered queries available for live dashboards  
@@ -19,7 +19,7 @@ To address this need, EVA enhances the data model with:
 - Operations Agent monitors inventory anomalies
 - RTI dashboard supports live decisions
 
-## Task 4.1: Create an Eventhouse for real-time data
+## Task 5.1: Create an Eventhouse for real-time data
 This task creates an Eventhouse in the workspace to load real-time data. 
 
 1. Follow the above steps to navigate and choose the appropriate Fabric Workspace.
@@ -39,7 +39,7 @@ This task creates an Eventhouse in the workspace to load real-time data.
 
     ![Eventhouse Database](../media/KQLDatabase.png)
 
-## Task 4.2: Ingest streaming telemetry into Eventhouse
+## Task 5.2: Ingest streaming telemetry into Eventhouse
 In this task, you will configure a real-time data stream using Eventstream and connect it to the Eventhouse created in the previous lab. You will also generate streaming data and ingest it into a KQL database table.
 
 #### Step 1: Creating Eventstream
