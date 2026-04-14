@@ -43,35 +43,42 @@ In this task of the workshop, you will be creating a Lakehouse.
 
         >**Note:** Both Tables and Files section is empty.
 
-8. To upload files, click **...** in Files section. Mouseover the **Upload** option and click **Upload files** option.
+8. Hover over the file in the Files section, click the **… (three dots)**, select the upload option, and then click on Upload files.
 
-    ![MouseoverUploadFiles](../media/MouseoverUploadFiles.png)
+    ![UploadFile](../media/upload01.png)
 
-9. **Click** folder icon at right side to open and choose file path.
+9. Follow these steps to upload the Ontology files into the Lakehouse:
 
-    ![ClickFolder](../media/ClickFolder.png)
+    1. Click on the folder icon in the Upload files window.
+    2. Navigate to the path: **C:\FabricIQLab\Ontology**.
+    3. Select the required files:
+        - Click **fabriciq_ontology_accelerator-0.1.0-py3...**
+        - Hold down the Ctrl key and click **retail_ontology_package.iq** (to select multiple files)
+    4. Click Open.
 
-10. Below files should be present at appropriate **File Explorer** path.
+        ![ClickFolder](../media/iqfolderupload.png)
+
+10. Ensure both **retail_ontology_package.iq** and **fabriciq_ontology_accelerator-0.1.0-py3-none-any.whl** are highlighted (selected) before clicking **Open**.
 
     ![OntologyPackageFiles](../media/OntologyPackageFiles.png)
 
-11. Select **retail_ontology_package.iq** file and click **Upload**
+11. click on **Upload**.
 
-    ![UploadFiles](../media/UploadFiles.png)
+    ![UploadFiles](../media/UploadFiles1.png)
 
     > Rename this file and remove .zip after all update completed.
 
-12. Repeat point 11 to upload **fabriciq_ontology_accelerator-0.1.0-py3-none-any.whl** file
-
-13. Close the upload window once both file uploaded.
+12. Close the upload window once both file uploaded.
 
     ![CurrentUpload](../media/CurrentUpload.png)
 
-14. Now, the **Files** section of the Lakehosue will how both files. 
+13. Now, the **Files** section of the Lakehosue will how both files. 
 
     ![LakehouseWithFiles](../media/LakehouseWithFiles.png)
 
-    > Dont forget to rename **retail_ontology_package.iq.zip** file and remove .zip after all update completed.
+14. Hover over **retail_ontology_package.iq.zip**, click **...** → **Rename**, and remove `.zip` to rename it to **retail_ontology_package.iq**.
+
+    >**Note:** Dont forget to rename **retail_ontology_package.iq.zip** file and remove .zip after all update completed.
 
 #### Understanding the Uploaded Files
 
@@ -144,7 +151,7 @@ To address this need, EVA enhances the data model with:
 
     ![Eventhouse Creation](../media/EventhouseCreate.png)
 
-3. Provide proper name and click the **Create** button to create the Eventhouse
+3. Provide name: **Retail_EventHouse** and click the **Create** button to create the Eventhouse
 
     ![Eventhouse Name](../media/EventhouseName.png)
 
