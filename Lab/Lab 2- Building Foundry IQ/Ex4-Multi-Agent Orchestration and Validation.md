@@ -154,7 +154,7 @@ Note: Before validating the workflow, test the individual agents and approve the
 
     ![Step 5.png](../media/image73.png)
 
-6. Enter prompt  `What is the inventory quantity for product ID PROD0011?`, then click on **Send button**.
+6. Enter prompt  `Which products are at risk of stockout, and how can we optimize inventory to avoid shortages?`, then click on **Send button**.
 
     ![Step 6.png](../media/image74.png)
 
@@ -162,9 +162,12 @@ Note: Before validating the workflow, test the individual agents and approve the
 
     ![Step 7.png](../media/image75.png)
 
+8. Enter prompt  `Which products are driving high return volumes that are impacting available inventory levels, and how should inventory planning be adjusted to minimize these returns?`    
+The **response** of the agents can be seen on the right side (See image pointer/box 1).  You can also see the **called Agents** during the process on the right side and in  the workflow (See image pointers/boxes 2 and 3).
+
     > It might take few seconds to get response.
 
-    > The response displays the inventory details for product ID PROD0011 across multiple store locations, including quantities and last restock dates. The expected outcome is to provide accurate stock availability information for the requested product.
+    ![Step 7.png](../media/image100.png)
 
 ### Task 4.3: Inspect the execution path using the Trace tool
 
