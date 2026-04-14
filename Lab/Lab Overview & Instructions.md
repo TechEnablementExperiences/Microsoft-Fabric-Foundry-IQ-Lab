@@ -52,7 +52,7 @@ To address these challenges, Zava’s leadership adopts **Microsoft Fabric, Fabr
 
 - **April – CEO**, accountable for **revenue, customer experience, and growth**  
 - **Rupesh – Chief Data Officer**, responsible for **data unification and governance**  
-- **Eva – Data Engineer**, building the **data foundation and semantic layer**  
+- **Eva – Data Engineer**, building the **data foundation**  
 - **Serena – Data Analyst**, driving **insights using business language**  
 - **Miguel – AI Engineer/Data Scientist**, designing **intelligent agents**  
 - **Ryan – End customer**, experiencing the **outcomes firsthand**
@@ -69,14 +69,13 @@ The lab is intentionally designed in **two connected stages**, showing the progr
 
 Participants begin by establishing a **unified, governed data foundation** in **OneLake**, eliminating **silos** across **batch, historical, and real-time data sources**:
 
-- **Batch and historical data** (sales, inventory, campaigns) land in a **Lakehouse**.  
-- **Streaming operational data** (inventory signals, store events, sensors) flows through **Eventstream** into **Eventhouse**.  
+- **Batch and historical data** (Customers, Products, store) land in a **Lakehouse**.  
+- **Streaming operational data** (customers, forecasts, inventories, products, carriers) flows into **Eventhouse**.  
 - **Microsoft Fabric** provides a **single storage, security, and governance boundary** for **analytics and AI**.
 
 On top of this foundation, **Fabric IQ** converts **raw data** into **shared business understanding**:
 
-- **Semantic models** translate tables into **business-friendly measures and relationships**.  
-- The **ontology** defines **core business entities** (**Stores, Products, Inventory, Campaigns**) and how they relate.
+  - The **ontology** defines **core business entities** (**Store, Product, Inventory, customer**) and how they relate.
 - A **graph representation** reveals how outcomes such as **stockouts, churn, and revenue** are connected.  
 - **Real-Time Intelligence (RTI)** enriches the ontology with **live operational signals**.  
 - **Operations agents** monitor **anomalies** as the business runs.  
@@ -166,7 +165,7 @@ Example retail entities include:
 | Store | Physical retail locations |
 | Product | Items sold across stores and online |
 | Inventory | Product availability across locations |
-| Campaign | Marketing and promotion activities |
+
 
 The ontology provides a **shared business language** that both people and AI systems can understand.
 
@@ -184,7 +183,6 @@ The solution combines several Fabric capabilities:
 |----------|--------|
 | Lakehouse | Stores historical and batch retail data |
 | Eventhouse | Processes real-time operational signals |
-| Semantic Model | Defines business-friendly measures and relationships |
 | Ontology | Represents the retail business domain as connected entities |
 
 By combining these components, the platform moves beyond raw analytics to create a **business-aware intelligence layer**.
@@ -243,35 +241,29 @@ This intelligence foundation becomes the starting point for the next stage of th
 
 ### [Exercise 1: Create a Workspace for Fabric IQ](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%201-%20Create%20a%20Workspace%20for%20Fabric%20IQ/Set%20up%20a%20Fabric%20workspace%20with%20proper%20capacity.md)
 
-**Task 1.1:** User login to Fabric.  
-**Task 1.2:** Set up a Fabric workspace with proper capacity. 
+**Task 1.1:** User login to Fabric  \
+**Task 1.2:** Set up a Fabric workspace with proper capacity 
 
-### [Exercise 2: Build a Lakehouse for the ontology](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%202%20-%20Build%20a%20Lakehouse%20for%20ontology/Build%20a%20Lakehouse%20and%20load%20batch%20data%20into%20the%20Lakehouse.md)
+### [Exercise 2: Generate Ontology Data](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%202%20-%20Generate%20Ontology%20Data/Generate%20Ontology%20Data.md)
 
-**Task 2.1:** Building a Lakehouse.  
-**Task 2.2:** Load batch data into the Lakehouse. 
+**Task 2.1:** Building a Lakehouse \
+**Task 2.2:** Building an Eventhouse \
+**Task 2.3:** Loading data into Lakehouse and Eventhouse
 
-### [Exercise 3: Prepare the Power BI semantic model](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%203%20-%20Prepare%20the%20Power%20BI%20semantic%20model/Generate%20ontology%20from%20a%20semantic%20model.md)
-**Task 3.1:** Build a Direct Lake semantic model.  
-**Task 3.2:** Choose required entities/tables for the semantic model.  
-**Task 3.3:** Establish relationships between entities.
+### [Exercise 3: Create Ontology](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%203%20-%20Create%20Ontology/Create%20Ontology.md)
+**Task 3.1:** Generate ontology from package \
+**Task 3.2:** Ontology Validation
 
-### [Exercise 4: RTI/Operations Agent](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%204%20-%20RTI%20(Operations%20agent)/Create%20Operations%20Agent%20(Fabric%20IQ)%20and%20Connect%20Agent%20to%20Ontology.md)
-**Task 4.1:** Create an Eventhouse for real-time data.  
-**Task 4.2:** Ingest streaming telemetry into Eventhouse.  
-**Task 4.3:** Create Operations Agent (Fabric IQ).  
-**Task 4.4:** Observe agent behavior in real-time.
+### [Exercise 4: Creating a Data Agent with Ontology](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%204%20-%20Creating%20a%20Data%20Agent%20with%20Ontology/Creating%20a%20Data%20Agent%20with%20Ontology.md)
+**Task 4.1:** Create a data agent with an ontology as the data source  \
+**Task 4.2:** Validate the data agent using natural language queries 
 
-### [Exercise 5: Create an Ontology on top of a semantic model](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%205%20-%20Create%20ontology%20on%20top%20of%20a%20semantic%20model/Generate%20ontology%20from%20a%20semantic%20model.md)
 
-**Task 5.1:** Generate ontology from a semantic model.  
-**Task 5.2:** Additional attributes (stream data) to enrich the ontology's capabilities.  
-**Task 5.3:** Validate the attribute binding and key attributes for establishing ontology relationships.  
+### [Exercise 5: Create Operations Agent (Fabric IQ)](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%205%20-%20Build%20Operations%20agent/Create%20Operations%20Agent%20(Fabric%20IQ).md)
 
-### [Exercise 6: Connect the Ontology using Data Agent and AI Foundry](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%206%20-%20Connecting%20ontology%20using%20data%20agent%20%26%20AI%20Foundry/Creating%20a%20Data%20Agent%20with%20Ontology.md)
-**Task 6.1:** Create a data agent with ontology as the data source.  
-**Task 6.2:** Validate the data agent using natural language queries.  
-**Task 6.3:** Create a Microsoft Foundry agent and add the data agent as a tool.
+**Task 5.1:** Create Operations Agent  \
+**Task 5.2:** Observe agent behavior in real-time  
+  
 
 ---
 
@@ -300,7 +292,7 @@ Foundry IQ bridges the final gap in the intelligence lifecycle:
 | Layer | Purpose | Example |
 |------|--------|--------|
 | Data | Unified enterprise data foundation | OneLake, Lakehouse, Eventhouse |
-| Intelligence | Business understanding of the data | Fabric IQ Ontology and Semantic Model |
+| Intelligence | Business understanding of the data | Fabric IQ Ontology |
 | Action | AI agents that reason and execute | Foundry IQ Agents |
 
 Most analytics platforms stop at **dashboards and reports**.  
@@ -409,15 +401,14 @@ Together, **Microsoft Fabric, Fabric IQ, and Foundry IQ** create a single platfo
 
 Set up governance, compute, models, and secure connectivity for the agentic platform.
 
- **Task 1.1:** Provision a Foundry Hub and project  
- **Task 1.2:** Deploy LLM and embedding models \
- **Task 1.3:** Configure secure service connections with Azure OpenAI and Fabric
-
+ **Task 1.1:** Provision a Foundry Hub and project \
+ **Task 1.2:** Deploy LLM and embedding models 
+ 
 ### [Exercise 2: Integrate Enterprise Knowledge via Foundry IQ](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%202%20-%20Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ/Ex2-Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ.md)
 Connect the agent to live enterprise data using indexed and federated patterns for "Zero-ETL" RAG.
 
   **Task 2.1:** Set up indexed sources for unstructured files and federated sources for real-time structured data retrieval \
-  **Task 2.2:** Connect to a Microsoft Fabric Lakehouse to enable direct access to enterprise data 
+  **Task 2.2:** Connect to a Microsoft Fabric Lakehouse to enable direct access to enterprise data
 
 ### [Exercise 3: Build Intelligent Agents with Tool Calling](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%203%20-%20Build%20an%20intelligent%20agent%20with%20Tool%20Calling/Ex3-Build%20an%20intelligent%20agent%20with%20Tool%20Call.md)
 Define agent behavior and enable tool‑based interactions.
@@ -433,7 +424,7 @@ Implement advanced agent-to-agent communication and verify the complete workflow
  **Task 4.2:** Validate the end-to-end agentic workflow \
  **Task 4.3:** Inspect the execution path using the Trace tool
 
-### [Exercise 5: Observability, Evaluation & Guardrails](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%205%20-%20Observability,%20Evaluation%20%26%20Guardrails/Exercise5-Observability,%20Evaluation%20%26%20Guardrails.md)
+### [Exercise 5: Observability, Evaluation & Guardrails](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%205%20-%20Observability%2C%20Evaluation%20%26%20Guardrails/Exercise5-Observability%2C%20Evaluation%20%26%20Guardrails.md)
 Ensure monitoring, safety, and continuous evaluation.
 
  **Task 5.1:** Enforce guardrails and safety policies \
