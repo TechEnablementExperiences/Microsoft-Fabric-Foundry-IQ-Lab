@@ -67,8 +67,9 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
     >Now, we are good to run this notebook.
 
-6. For the notebook configuration, please move to 2nd cell(Out of two cells) and replace the value for 
-    ![Configuration](../media/Configuration.png) 
+6. For the notebook configuration, please move to 2nd cell(Out of two cells) and replace the value for:
+
+   ![Configuration](../media/Configuration.png) 
 
     - ontology_item_name: `Provide Ontology Name(Unique)`
     - binding_lakehouse_name: `Lakehouse name created in last exercise`
@@ -76,19 +77,19 @@ This marks a breakthrough moment in transitioning from structured data to busine
     - binding_eventhouse_cluster_uri: `Query URI copied from last exercise`
     - binding_eventhouse_database_name: `Database name from Eventhouse`
 
-7. After configuration, click **Run all** button at top banner and execute entire notebook cell by cell.
+8. After configuration, click **Run all** button at top banner and execute entire notebook cell by cell.
     - First cell will install .whl file to execute all refrerenced files.
     - Second cell will execute ontology package to create **Ontology**
 
-8. Below is the response from successful run
+9. Below is the response from successful run
 
     ![SuccessRun](../media/SuccessRun.png) 
 
-9. Navigate to the workspace area to see the new Ontology created.
+10. Navigate to the workspace area to see the new Ontology created.
 
     ![OntologyCreated](../media/OntologyCreated.png) 
 
-10. Click **Ontology**. It will redirect to a different page to see its details.
+11. Click **Ontology**. It will redirect to a different page to see its details.
 
     ![OntologyArea](../media/OntologyArea.png) 
     > 
