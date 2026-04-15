@@ -26,6 +26,8 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
 2. Click on drop down of **Foundry IQ Connection**, then click on **Connect a resource**.
 
+    >**Note**: If the Search Service is already listed and visible, skip this step and select the existing Search Service.
+
     ![Select step 2](../media/image15.png)
 
 3. Click on the dropdown for the **Azure AI Search** field, select the Search resource named **srch-foundry-iq-lab**, and then click on **Connect**. 
@@ -94,13 +96,14 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
 7. Navigate back to Microsoft Foundry, enter name as **return-policy**, paste the previously copied **Fabric Workspace ID** and the **Lakehouse ID**, select **text-embedding-ada-002**, and then click on **Create**.
 
-    **Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
+    >**Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
+    > If the Lakehouse and workspace parameters are not visible, scroll down and select the lakehouse created in the Fabric Lab.
 
     ![Step 5.png](../media/image95.png)
 
-8. Review all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
+8. Review and validate all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
 
-    **Note:** If the knowledge source name cannot be edited, please leave it as is.
+    >**Note:** If the knowledge source name cannot be edited, leave it unchanged.
 
     ![Step 6.png](../media/image96.png)
 

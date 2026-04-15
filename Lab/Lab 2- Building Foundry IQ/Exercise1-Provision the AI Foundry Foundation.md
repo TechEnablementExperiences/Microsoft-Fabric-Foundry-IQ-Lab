@@ -22,12 +22,19 @@ Miguel provisions the following core components within Microsoft Foundry:
     > **Note:** After opening the link, you may be prompted with a **Get Started or Sign in** screen. Click Sign in or Get Started to proceed.
     > If you enable the New Foundry toggle, a pop-up may appear asking you to select a project - choose the available **project** and click Let’s go to continue.
 
+    ![Image](../media/getstarted.png)
+
 2. Click on **Build** to create agents, deploy models, and build workflows.
 
     > **Note:** Make sure the **New Foundry** toggle is turned On.
     > This setting is required to use the latest Foundry portal UI.
 
      ![Step 7 Image](../media/image7.png)
+
+3. If a pop-up appears to select a project, choose the appropriate project from the list and click on the **Let’s go** button.
+
+    ![Step 7 Image](../media/selecproject.png)
+
 
 ### Task 1.2: Deploy LLM and embedding models
 
@@ -43,6 +50,8 @@ Miguel provisions the following core components within Microsoft Foundry:
 
 3. Click on the **Deploy** dropdown and select **Default settings**.
 
+    >**Note**: If a pop-up appears to select a project for model deployment, choose the region as **East US** and select an available project from the dropdown.
+
     ![Deploy model](../media/image11.png)
 
 4. Once the model is deployed, open the model **playground**.
@@ -57,11 +66,13 @@ Miguel provisions the following core components within Microsoft Foundry:
 
     ![Select Models](../media/image8.png)
 
-7. Search **text-embedding-ada** then click on **text-embedding-ada-002**.
+7. Search **text-embedding-ada-002** then click on **text-embedding-ada-002**.
 
     ![Step 5.png](../media/image12.png)
 
 8. Click on the **Deploy** dropdown and select **Default settings**.
+
+    >**Note**: If a pop-up appears to select a project for model deployment, choose the region as **East US** and select an available project from the dropdown.
 
     ![Step 6.png](../media/image13.png)
 
