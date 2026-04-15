@@ -55,6 +55,8 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
 3. Click **Add data items** and select **From OneLake catalog** to open OneLake ares.
 
+    >**Note**: If the **+ Add data items** option is not visible (as shown in the screenshot), it may be due to an existing or unknown data source. In that case, scroll down and select **+ Add data items** from the **Data Items** section below.
+
     ![ChooseOneLake](../media/ChooseOneLake.png) 
 
 4. Select above created Lakehosue and click **Add** to include in the notebook execution.
@@ -62,6 +64,8 @@ This marks a breakthrough moment in transitioning from structured data to busine
     ![LakehouseSelection](../media/LakehouseSelection.png) 
 
 5. Now, selected **Lakehouse** will be binded with Notebook.
+
+    >**Note**: Set the **<inject key= "Lakehouse" enableCopy="false"/>** as the default for the notebook. To do this, hover over the lakehouse, click on the **... (three dots)** menu, and select **Set as default lakehouse**.
 
     ![BindLakehouse](../media/BindLakehouse.png) 
 
@@ -71,11 +75,11 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
    ![Configuration](../media/Configuration.png) 
 
-    - ontology_item_name: `Provide Ontology Name(Unique)`
-    - binding_lakehouse_name: `Lakehouse name created in last exercise`
-    - binding_eventhouse_name: `Eventhouse name created in last exercise`
+    - ontology_item_name: `Retail_Ontology`
+    - binding_lakehouse_name:**<inject key= "Lakehouse" enableCopy="true"/>**
+    - binding_eventhouse_name: `Retail_EventHouse`
     - binding_eventhouse_cluster_uri: `Query URI copied from last exercise`
-    - binding_eventhouse_database_name: `Database name from Eventhouse`
+    - binding_eventhouse_database_name: `Retail_EventHouse`
 
 8. After configuration, click **Run all** button at top banner and execute entire notebook cell by cell.
     - First cell will install .whl file to execute all refrerenced files.
@@ -92,10 +96,19 @@ This marks a breakthrough moment in transitioning from structured data to busine
 11. Click **Ontology**. It will redirect to a different page to see its details.
 
     ![OntologyArea](../media/OntologyArea.png) 
-    > 
-    - Left area will hold all the entities binded from Lakehouse and Eventhouse
-    - Middle area wll provide relational view of each selected entity.
-    - Right area will show its properties and binding details.
+
+    >- Left area will hold all the entities binded from Lakehouse and Eventhouse
+    >- Middle area wll provide relational view of each selected entity.
+    >- Right area will show its properties and binding details.
+
+
+11. Click **Properties** from right side configuration area to see all attributes details binded from Lakehosue(Static) and Eventhouse(Timeseries)
+
+    ![PropertiesView](../media/PropertiesView.png) 
+
+12. Click **Bindings** to validate both statis and timeseries data binding.
+
+    ![BindingView](../media/BindingView.png) 
 
 ## Task 3.2: Ontology Validation
 1. To validate each entities and its detials, please select any. In below case, I have selected Product.
@@ -108,12 +121,5 @@ This marks a breakthrough moment in transitioning from structured data to busine
 
     ![GraphView](../media/GraphView.png) 
 
-4. Click **Properties** from right side configuration area to see all attributes details binded from Lakehosue(Static) and Eventhouse(Timeseries)
-
-    ![PropertiesView](../media/PropertiesView.png) 
-
-5. Click **Bindings** to validate both statis and timeseries data binding.
-
-    ![BindingView](../media/BindingView.png) 
 
     > Please validate attribute details which were provision for static and timeseries.

@@ -20,11 +20,11 @@ To address this need, EVA enhances the data model with:
 
 ## Task 5.1: Create Operations Agent (Fabric IQ)
 1. Select Fabric Workspace and click **New Item**.
-2. In the search box type **Opertion** keyword to get Operation Agent. Click **Operation Agent**.
+2. In the search box type **Operation** keyword to get Operation Agent. Click **Operation Agent**.
 
     ![Choose OperationAgent](../media/ChooseOperationAgent.png)
 
-3. New popup window will apear. Provide Operation Agent name and select workspace in the Location section. Click **Create**.
+3. New popup window will apear. Provide Operation Agent name: **Retail_OperationAgent** and select workspace in the Location section. Click **Create**.
 
     ![Choose OperationAgent](../media/NewOperationAgent.png)
 
@@ -93,7 +93,7 @@ To address this need, EVA enhances the data model with:
 
 11. Click **Save** button to generate **Agent playbook**. 
 
-    > Please click "Playbook" button if it need explicit click to generate Agent playbook.
+    >**Note:** Please click on **"Generate Playbook"** button if it need explicit click to generate Agent playbook.
 
     ![OpeationAgentSave](../media/OpeationAgentSave.png)
 
@@ -104,9 +104,11 @@ To address this need, EVA enhances the data model with:
 12. After few moment, Agent playbook will be generated with all its step by step action details.
 
     **Playbook - Business glossary & Objects**
-        ![Paybook-I](../media/Paybook-I.png)
+
+    ![Paybook-I](../media/Paybook-I.png)
 
     **Playbook - Properties and Rules**
+
     ![Paybook-II](../media/Paybook-II.png)
 
 13. Read the **Agent playbook** and start the **Operation Agent** if all instructions are correct.
@@ -118,58 +120,73 @@ To address this need, EVA enhances the data model with:
 
     ![ActionCreation](../media/ActionCreation.png)
 
-2. Now action creation popup will appear to include **action name** and **copy the below description** (It's mandatory and any short description you can provide). Also, user can pass parameter for explicit specification while taking action. Click **Create** to create custom action.
+2. Now action creation popup will appear to include action name: **Inventory_Action** and **copy the below description** (It's mandatory and any short description you can provide). Also, user can pass parameter for explicit specification while taking action. Click **Create** to create custom action.
 
     ![CreatingAction](../media/CreatingAction.png)
-```
-Inventory action is a custom action. While action required. Activator will trigger this action to send message/email to the authorized operation team.
-```
+
+    ```
+    Inventory action is a custom action. While action required. Activator will trigger this action to send message/email to the authorized operation team.
+    ```
 
 4. Now, custom action will be created for operation agent.
 
-    ![ActionCreated](../media/ActionCreated.png)
+5. Configure Custom Action - Activator Setup. Follow the steps below to configure the activator for your custom action:
+    - In the Workspace dropdown, select **<inject key= "WorkspaceName" enableCopy="false"/>**.
+    - Under Activator, choose Create a new item.
+    - In the New item name field, enter **Inventory_Activator**.
+    - Click on **Create activator** to complete the setup.
 
-5. Action need to configure **Custom Action**. User need to click **Connect** for configuration.
+        >**Note:** Ensure the correct workspace is selected before creating the activator.
 
-6. In custom action configuration pan, user need to choose **Workspace**, **Activator** (if not available, select and click **New activator**). 
+        ![ActionCreated](../media/customitem.png)
 
-    ![ActionConfiguration](../media/ActionConfiguration.png)
+6. In custom action configuration pane, user need to choose **Workspace**, **Activator** (if not available, select and click **New activator**). 
 
-   - Click **Create a connection** button to get connection details for activator.
+    - Click **Create a connection** button to get connection details for activator.
    - After the connection is created, copy the connection string and save at safe place.
    - Click **Open flow builder** to open the PowerAutomate flow in a separate browser tab.
+
+        ![ActionConfiguration](../media/ActionConfiguration.png)
+
 7. User can see 2nd tab for PowerAutomate in the browser window.
+
+    >**Note:** If any pop-up appears, click **Get Started** and proceed without further action.
+
     ![Different Tab PowerAutomate](../media/DifferentTabPowerAutomate.png)
 
 8. In the PowerAutomate flow page, click **Activator** action to open its properties page.
     - Paste the connection string which was copied.
-    - Sign in to the account for proper authorization if not connected.
+    - Click on the **Change connection** button.
 
-    ![PowerAutomateActivatorSetting](../media/PowerAutomateActivatorSetting.png)
+        ![PowerAutomateActivatorSetting](../media/PowerAutomateActivatorSetting.png)
 
-9. Only the activator will not work here. so use should add output action.
+9. To add a new connection, since no active connection exists, click on **Add New**.
 
-10. Click "'+'" (available below activator action) to insert new action.
+    ![PowerAutomate](../media/newconnect.png)
 
-    ![NewItemPowerAutomate](../media/NewItemPowerAutomate.png)
+10. Click on **Sign in** to authenticate and create a new connection to Data Activator.
 
-11. In action selection pan, please search **Team** to establich Team Chat. Click **See all** to visualize all actions for Team.
+    ![PowerAutomate](../media/signin.png)
 
-    ![FindTeamAction](../media/FindTeamAction.png)
-
-12. Select **Get messages in chat** from the list. This will help the **Activator** action to post messages in teams.
-
-    ![GetMessageChat](../media/GetMessageChat.png)
-
-13. The User needs to authorize Teams by providing an account for message communication.
-
-    ![SignInAccountForTeam](../media/SignInAccountForTeam.png)
-
-14. Click **Sign in** to authorize account. It will ask the account. User need to select account.
+11. Select your account to proceed with the **sign-in**. If your account is not listed, click on **Use another account**.
 
     ![SelectingAccount](../media/SelectingAccount.png)
 
-15. Now configuration required for posting team message. Configure if property window open by default at left side or click action to open.
+12. Only the activator will not work here. so the user should add output action.
+
+13. Click "'+'" (available below activator action) to insert new action.
+
+    ![NewItemPowerAutomate](../media/NewItemPowerAutomate.png)
+
+14. In action selection pan, please search **Team** to establich Team Chat. Click **See all** to visualize all actions for Team.
+
+    ![FindTeamAction](../media/FindTeamAction.png)
+
+15. Select **Post messages in a chat or channel** from the list. This will help the **Activator** action to post messages in teams.
+
+    ![GetMessageChat](../media/GetMessageChat.png)
+
+16. Now configuration required for posting team message. Configure if property window open by default at left side or click action to open.
 
     ![TeamPostConfiguration](../media/TeamPostConfiguration.png)    
 
@@ -179,33 +196,33 @@ Inventory action is a custom action. While action required. Activator will trigg
     - Message - I have provided static message. We can create cutomize and dynamic message based on parameters.
     - Autorization - Sign in account if not there.
 
-16. Click **Save** to save the flow activity. We can see successful message in the banner.
+17. Click **Save** to save the flow activity. We can see successful message in the banner.
 
     ![SaveFlow](../media/SaveFlow.png) 
 
-17. Select Fabric tab in the browser to see the Operation agent screen. Now **Apply** button will be enable.
+18. Select Fabric tab in the browser to see the Operation agent screen. Now **Apply** button will be enable.
     >Apply button will enable once flow saved successfully.
 
-18. Click **Apply** button to save Custom Action.
+19. Click **Apply** button to save Custom Action.
 
     ![SavingCustomAction](../media/SavingCustomAction.png)     
 
-19. Click **Save** button again in Operation Agent to generate Playbook.
+20. Click **Save** button again in Operation Agent to generate Playbook.
 
-20. Start the Operation Agent once Playbook generated successfully.
+21. Start the Operation Agent once Playbook generated successfully.
 
-21. Now we can see **Team** message sent by Operation Agent when we find any anomaly. 
+22. Now we can see **Team** message sent by Operation Agent when we find any anomaly. 
     - For example : you can refer below image
 
     ![FabricOA-TeamMessage](../media/FabricOA-TeamMessage.png)   
 
-22. To take action, we can click **Yes/No**. Click **Yes** to activate trigger and send message to respective team.
+23. To take action, we can click **Yes/No**. Click **Yes** to activate trigger and send message to respective team.
 
-23. Activator will acknowledge with below message. 
+24. Activator will acknowledge with below message. 
      - For example : you can refer below image
 
     ![ActivatorSuccessMessage](../media/ActivatorSuccessMessage.png)  
 
-24. After action taken by operation team, workflow will send confirmation message back.
+25. After action taken by operation team, workflow will send confirmation message back.
 
     ![WorkflowMessage](../media/WorkflowMessage.png)  

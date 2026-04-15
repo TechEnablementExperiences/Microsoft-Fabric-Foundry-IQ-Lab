@@ -202,7 +202,9 @@ To address this need, EVA enhances the data model with:
 
     ![NotebookwithoutLakehouse](../media/NotebookwithoutLakehouse.png) 
 
-3. Click **Add data items** and select **From OneLake catalog** to open OneLake ares.
+3. Click **+ Add data items** and select **From OneLake catalog** to open OneLake ares.
+
+    >**Note**: If the **+ Add data items** option is not visible (as shown in the screenshot), it may be due to an existing or unknown data source. In that case, scroll down and select **+ Add data items** from the **Data Items** section below.
 
     ![ChooseOneLake](../media/ChooseOneLake.png) 
 
@@ -211,6 +213,8 @@ To address this need, EVA enhances the data model with:
     ![LakehouseSelection](../media/LakehouseSelection.png) 
 
 5. Now, selected **Lakehouse** will be binded with Notebook.
+
+    >**Note**: Set the **<inject key= "Lakehouse" enableCopy="false"/>** as the default for the notebook. To do this, hover over the lakehouse, click on the **... (three dots)** menu, and select **Set as default lakehouse**.
 
     ![BindLakehouse](../media/BindLakehouse.png) 
 

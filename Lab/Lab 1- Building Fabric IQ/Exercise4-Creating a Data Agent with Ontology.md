@@ -32,13 +32,13 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 
     ![datasource](../media/datasource.png)
 
-2. Choose the Ontology created in the previous lab, then click on **Add** and verify that the ontology is successfully attached.
+2. Choose the **Retail_Ontology** created in the previous lab, then click on **Add** and verify that the ontology is successfully attached.
 
     ![Dataaddition](../media/Dataaddition.png)
 
-> **Note:**  
-> - The Ontology acts as a semantic layer, helping the Data Agent understand the data context.  
-> - Ensure the correct ontology is selected to get accurate insights.
+    > **Note:**  
+    > - The Ontology acts as a semantic layer, helping the Data Agent understand the data context.  
+    > - Ensure the correct ontology is selected to get accurate insights.
 
 ## Task 4.2: Validate the data agent using natural language queries
 
@@ -124,6 +124,8 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 
 4. After entering the instructions, click on **Publish** to save the configuration.
 
+    >**Note**: In the **Publish Data Agent** pop-up, click the**Publish** Button.
+
     ![agentpublish](../media/agentpublish.png)
 
 5. After adding the instructions, click on the **close (✕) icon** on the **Agent instructions** tab to exit the window.
@@ -146,6 +148,7 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
    - Provides insights in a readable format  
 
 10. Try multiple queries and refine your questions to explore additional insights.
+
      ```
      - Which products are frequently returned and impacting revenue?
      - Which regions are underperforming in sales?
@@ -153,7 +156,7 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
      - Which stores have the highest number of orders?
      ```
 
-> **Note:**  
-> - Clear and specific questions provide more accurate results.  
-> - Responses may vary depending on how the question is framed.  
-> - The Data Agent uses the Ontology to translate natural language into meaningful queries.
+    > **Note:**  
+    > - Clear and specific questions provide more accurate results.  
+    > - Responses may vary depending on how the question is framed.  
+    > - The Data Agent uses the Ontology to translate natural language into meaningful queries.
