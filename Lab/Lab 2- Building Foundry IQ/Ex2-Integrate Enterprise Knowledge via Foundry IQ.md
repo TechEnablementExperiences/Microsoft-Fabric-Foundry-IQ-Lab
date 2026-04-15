@@ -30,7 +30,7 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Select step 2](../media/image15.png)
 
-3. Click on the dropdown for the **Azure AI Search** field, select the Search resource named **srch-foundry-iq-lab**, and then click on **Connect**. 
+3. Click on the dropdown for the **Azure AI Search** field and select the search resource named **srch-foundry-iq-lab**. Ensure that the **Auth Type** is set to **API Key**, then click on **Connect**.
 
     ![Select step 3](../media/image16.png)
 
