@@ -12,8 +12,7 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 - Trusted and explainable responses powered by governed business context
 
 ## Task 4.1: Create a data agent with an ontology as the data source
-
-1. Navigate to your **Fabric Workspace**: **<inject key= "WorkspaceName" enableCopy="false"/>**.
+1. Navigate to your **Fabric Workspace**.
 
 2. In your Fabric workspace, click on the **New item** button in the top command bar.
 
@@ -33,21 +32,23 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 
     ![datasource](../media/datasource.png)
 
-2. Choose the Ontology created in the previous lab: **FabricIQOntology**, then click on **Add** and verify that the ontology is successfully attached.
+2. Choose the Ontology created in the previous lab, then click on **Add** and verify that the ontology is successfully attached.
 
     ![Dataaddition](../media/Dataaddition.png)
 
-     > **Note:**  
-     > - The Ontology acts as a semantic layer, helping the Data Agent understand the data context.  
-     > - Ensure the correct ontology is selected to get accurate insights.
+> **Note:**  
+> - The Ontology acts as a semantic layer, helping the Data Agent understand the data context.  
+> - Ensure the correct ontology is selected to get accurate insights.
 
 ## Task 4.2: Validate the data agent using natural language queries
 
-1. Verify that the **FabricIQOntology** is successfully added under the **Data** tab in the Explorer pane.
+1. Verify that the **Ontology (e.g., Retail_Ontology)** is successfully added under the **Data** tab in the Explorer pane.
   
      ![Agentinstr](../media/Agentinstr.png)     
     
 2. Click on **Agent instructions** from the top menu.
+
+     ![AgentInstruction](../media/AgentInstruction.png) 
 
 3. In the **Agent instructions** section, remove any existing default content present in the instruction box, provide guidance to control how the agent responds by entering instructions. 
 
@@ -57,57 +58,71 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
     Copy the below instructions and paste them into the **Agent instructions** section:
 
      ```
-     This data agent supports retail business analytics by answering questions related to sales, customers, marketing campaigns,  inventory, store operations, and website      activity using the IQ_Ontology(IQ Ontology)  dataset.
+     **Purpose:**
+     This data agent is designed to answer analytical and operational questions for retail business users using the Retail_Ontology, which integrates Lakehouse (historical) and Eventhouse (real-time) data.
 
-     The agent should interpret natural language questions and return clear business insights, summaries, and metrics derived from the relevant data tables.
+     **Planning Rules**
+     - Understand the user intent: classify into Sales, Inventory, Customer, Promotion, Supply Chain, or Forecasting
+     - Identify whether the question requires:
+     - Historical analysis → use Lakehouse entities
+     - Real-time / near real-time insights → use Eventhouse entities (DemandSignal, Inventory updates, etc.)
+     - Break complex queries into:
+     - Entity identification
+     - Relationship traversal
+     - Metric aggregation
+     - Always validate:
+     - Time filters (date, period)
+     - Granularity (store, region, product, category)
 
-     Please consider these tables only and the responses should prioritize business understanding rather than raw data output.
+   **Data Source Mapping**
+   - Sales & Orders
+     - Order, OrderLine → revenue, quantity,    transactions
+   - Customer Insights
+     - Customer → segmentation, behavior
+   - Product Analysis
+     - Product, ProductCategory → product performance
+   - Inventory & Supply Chain
+     - Inventory, Shipment, Warehouse, Store → stock    levels, fulfillment
+   - Promotions
+     - Promotion → campaign effectiveness
+   - Returns
+     - Return → return rates, defects
+   - Forecast & Demand
+     - Forecast → planned demand
+     - DemandSignal (Eventhouse) → real-time demand    spikes
+   - Geography
+     - Region → regional performance
+   
+   **Terminology Standardization**
+   - Revenue = Sum(OrderLine.LineTotalAmount)
+   - Sales Volume = Sum(OrderLine.quantity)
+   - Inventory Level = Available stock in Inventory
+   - Demand = Forecast or DemandSignal depending on    context
+   - Conversion Rate = Orders / Customers
+   - Return Rate = Returns / Orders
+   
+   **Query Behavior Rules**
+   - Prefer aggregated insights over raw data unless    explicitly requested
+   - Always:
+     - Apply relevant filters (date, region, product)
+     - Use joins via ontology relationships (e.g.,    Order → Customer → Region)
+   - For ambiguous queries:
+     - Ask clarifying questions OR
+     - Provide best assumption with explanation
+   
+   **Response Style**
+   - Clear, business-friendly explanations
+   - Include:
+     - Key insights
+     - Supporting metrics
+     - Trends (if time-based)
+   - Use bullet points for readability
+   - Highlight anomalies or patterns
+   - Avoid overly technical database language
 
-     ## **Data Domain Mapping**
-     ### **Customer Analytics**
-
-     Use tables like customer (Customer master information and demographics, feedback (Customer feedback, ratings, and  satisfaction) when the question relates to customers, demographics, or feedback.
-
-     ### **Sales Analytics**
-     - For online sales: Involved ecommerce  sales and consider tables like onlinesales, product, customer to generate values like "Total online sales by product", "Top   selling online products", "Online revenue by customer segment"
-     - For offline sales: Involved store sales and consider tables like offlinesales, store, product, customer to generate values  like "Store revenue by location", "Best  performing store", Offline sales trend by region"
-
-     ### **Marketing Campaign Analytics**
-     For marketing and campaigning related question, please consider tables like campaigns, customer, onlinesales, offlinesales, product to answer below type questions
-     - Campaign conversion rate
-     - Sales generated by campaign
-     - Customers acquired through campaign
-
-     ### **Website Behavior Analytics**
-     Consider tables like clickstream,  webtraffic, customer, product to provide answer and analytical values for "Most  visited pages", "Website traffic trend",      "Conversion funnel from visit to purchase"
-
-     ### **Product & Inventory Analytics**
-     Consider tables like product, inventory to provide values for "Current inventory level", "Products close to stock", "Inventory turnover"
-
-     ### **Store Operations**
-     Most important analytical report where it will consider tables like store, storemanager, shiftschedule l and provide the valuable information like "Store manager  performance", "Staff scheduling insights","Store operational metrics"
-
-     ## **Rules for Query Planning**
-     - While answering question, please consider retail domain.
-     - Please consider both static and real-time data to provide most effective results
-     - Please use aggregations where appropriate like SUM, COUNT, AVG, DISTINCT
-     - Apply data filters if the user mentioned time periods
-     - use joins only when required
-     - avoid returning unnecessary columns
-     Rules for Query Planning
-
-     Use aggregations when appropriate like SUM, COUNT, AVG, DISTINCT.
-     Apply filters if the user mentions time periods.
-     Use joins through ontology relationships.
-     Avoid returning unnecessary columns.
-
-     Support group by in GQL.
-     When users ask for highest, top, best   performing, or most, compute aggregated metrics and rank results accordingly.
      ```
 
 4. After entering the instructions, click on **Publish** to save the configuration.
-
-     **Note:** If prompted with a publish pop-up, click Publish **Publish** to continue.
 
     ![agentpublish](../media/agentpublish.png)
 
@@ -119,30 +134,26 @@ Instead of writing complex SQL queries, Serena interacts directly with a **Fabri
 
 7. In the query input area, ask questions using natural language, for example:
     ````
-     Show online sales transactions?
+       Which customer generated the highest total sales amount?
     ````
 8. Submit the query and review the response generated by the Data Agent.
-
-     **Note**: The output may differ each time, as it is generated by AI. If you encounter any errors due to data retrieval issues, wait for a few moments, refresh the screen, and try again.
 
      ![agentresponse](../media/agentresponse.png)
 
 9. Observe how the agent:
-   
    - Interprets the question  
    - Queries the underlying data using the ontology  
    - Provides insights in a readable format  
 
 10. Try multiple queries and refine your questions to explore additional insights.
-     
      ```
-     Which customer generated the highest total sales amount?
-     ```
-     ```
-     Which product has the highest total  sales amount?
+     - Which products are frequently returned and impacting revenue?
+     - Which regions are underperforming in sales?
+     - Which products are at risk of stockout?
+     - Which stores have the highest number of orders?
      ```
 
-     > **Note:**  
-     > - Clear and specific questions provide more accurate results.  
-     > - Responses may vary depending on how the question is framed.  
-     > - The Data Agent uses the Ontology to translate natural language into meaningful queries.
+> **Note:**  
+> - Clear and specific questions provide more accurate results.  
+> - Responses may vary depending on how the question is framed.  
+> - The Data Agent uses the Ontology to translate natural language into meaningful queries.
