@@ -239,27 +239,27 @@ At this stage, the organization has established a **trusted intelligence layer**
 
 This intelligence foundation becomes the starting point for the next stage of the lab, where **Foundry IQ introduces AI agents that can act on this intelligence**.
 
-### [Exercise 1: Create a Workspace for Fabric IQ](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%201-%20Create%20a%20Workspace%20for%20Fabric%20IQ/Set%20up%20a%20Fabric%20workspace%20with%20proper%20capacity.md)
+### **Exercise 1: Create a Workspace for Fabric IQ**
 
 **Task 1.1:** User login to Fabric  \
 **Task 1.2:** Set up a Fabric workspace with proper capacity 
 
-### [Exercise 2: Generate Ontology Data](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%202%20-%20Generate%20Ontology%20Data/Generate%20Ontology%20Data.md)
+### **Exercise 2: Generate Ontology Data**
 
 **Task 2.1:** Building a Lakehouse \
 **Task 2.2:** Building an Eventhouse \
 **Task 2.3:** Loading data into Lakehouse and Eventhouse
 
-### [Exercise 3: Create Ontology](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%203%20-%20Create%20Ontology/Create%20Ontology.md)
+### **Exercise 3: Create Ontology**
 **Task 3.1:** Generate ontology from package \
 **Task 3.2:** Ontology Validation
 
-### [Exercise 4: Creating a Data Agent with Ontology](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%204%20-%20Creating%20a%20Data%20Agent%20with%20Ontology/Creating%20a%20Data%20Agent%20with%20Ontology.md)
+### **Exercise 4: Creating a Data Agent with Ontology**
 **Task 4.1:** Create a data agent with an ontology as the data source  \
 **Task 4.2:** Validate the data agent using natural language queries 
 
 
-### [Exercise 5: Create Operations Agent (Fabric IQ)](/Lab/Lab%201-%20Building%20Fabric%20IQ/Exercise%205%20-%20Build%20Operations%20agent/Create%20Operations%20Agent%20(Fabric%20IQ).md)
+### **Exercise 5: Create Operations Agent (Fabric IQ)**
 
 **Task 5.1:** Create Operations Agent  \
 **Task 5.2:** Observe agent behavior in real-time  
@@ -397,34 +397,34 @@ You will see how:
 Together, **Microsoft Fabric, Fabric IQ, and Foundry IQ** create a single platform that connects **data, intelligence, and AI action** across the enterprise.
 
 
-### [Exercise 1: Provision the AI Foundry Foundation](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%201%20-%20Provision%20the%20AI%20Foundry%20Foundation/Exercise1-Provision%20the%20AI%20Foundry%20Foundation.md)
+### **Exercise 1: Provision the AI Foundry Foundation**
 
 Set up governance, compute, models, and secure connectivity for the agentic platform.
 
  **Task 1.1:** Provision a Foundry Hub and project \
  **Task 1.2:** Deploy LLM and embedding models 
  
-### [Exercise 2: Integrate Enterprise Knowledge via Foundry IQ](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%202%20-%20Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ/Ex2-Integrate%20Enterprise%20Knowledge%20via%20Foundry%20IQ.md)
+### **Exercise 2: Integrate Enterprise Knowledge via Foundry IQ**
 Connect the agent to live enterprise data using indexed and federated patterns for "Zero-ETL" RAG.
 
   **Task 2.1:** Set up indexed sources for unstructured files and federated sources for real-time structured data retrieval \
   **Task 2.2:** Connect to a Microsoft Fabric Lakehouse to enable direct access to enterprise data
 
-### [Exercise 3: Build Intelligent Agents with Tool Calling](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%203%20-%20Build%20an%20intelligent%20agent%20with%20Tool%20Calling/Ex3-Build%20an%20intelligent%20agent%20with%20Tool%20Call.md)
+### **Exercise 3: Build Intelligent Agents with Tool Calling**
 Define agent behavior and enable tool‑based interactions.
 
  **Task 3.1:** Create agent persona and system instructions \
  **Task 3.2:** Attach configured knowledge sources to the agent \
  **Task 3.3:** Implement agent tool calling capabilities 
 
-### [Exercise 4: Multi-Agent Orchestration and Validation](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%204%20-%20Multi-Agent%20Orchestration%20and%20Validation/Ex4-Multi-Agent%20Orchestration%20and%20Validation.md)
+### **Exercise 4: Multi-Agent Orchestration and Validation**
 Implement advanced agent-to-agent communication and verify the complete workflow.
 
  **Task 4.1:** Configure multi-agent orchestrator and specialist agents  
  **Task 4.2:** Validate the end-to-end agentic workflow \
  **Task 4.3:** Inspect the execution path using the Trace tool
 
-### [Exercise 5: Observability, Evaluation & Guardrails](/Lab/Lab%202-%20Building%20Foundry%20IQ/Exercise%205%20-%20Observability%2C%20Evaluation%20%26%20Guardrails/Exercise5-Observability%2C%20Evaluation%20%26%20Guardrails.md)
+### **Exercise 5: Observability, Evaluation & Guardrails**
 Ensure monitoring, safety, and continuous evaluation.
 
  **Task 5.1:** Enforce guardrails and safety policies \
