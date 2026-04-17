@@ -195,7 +195,6 @@ Retail environments generate large volumes of **real-time operational data**.
 
 Fabric IQ integrates these signals into the ontology using:
 
-- **Eventstream**
 - **Eventhouse**
 - **Operations Agents**
 

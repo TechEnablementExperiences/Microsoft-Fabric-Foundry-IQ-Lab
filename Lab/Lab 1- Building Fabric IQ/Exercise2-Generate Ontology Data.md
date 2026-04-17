@@ -53,14 +53,11 @@ In this task of the workshop, you will be creating a Lakehouse.
     2. Navigate to the path: **C:\FabricIQLab\Ontology**.
     3. Select the required files:
         - Click **fabriciq_ontology_accelerator-0.1.0-py3...**
+        - Hold down the Ctrl key and click **Zava Black Friday Return Policy** (to select multiple files)
         - Hold down the Ctrl key and click **retail_ontology_package.iq** (to select multiple files)
     4. Click Open.
 
         ![ClickFolder](../media/iqfolderupload.png)
-
-10. Ensure both **retail_ontology_package.iq** and **fabriciq_ontology_accelerator-0.1.0-py3-none-any.whl** are highlighted (selected) before clicking **Open**.
-
-    ![OntologyPackageFiles](../media/OntologyPackageFiles.png)
 
 11. click on **Upload**.
 
@@ -68,7 +65,7 @@ In this task of the workshop, you will be creating a Lakehouse.
 
     > Rename this file and remove .zip after all update completed.
 
-12. Close the upload window once both file uploaded.
+12. Close the upload window once all file uploaded.
 
     ![CurrentUpload](../media/CurrentUpload.png)
 
