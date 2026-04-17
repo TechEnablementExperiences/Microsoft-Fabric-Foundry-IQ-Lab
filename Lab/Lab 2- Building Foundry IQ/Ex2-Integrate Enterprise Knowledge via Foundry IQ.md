@@ -72,11 +72,21 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 1.png](../media/image25.png)
 
-2. In the **Create a knowledge source (OneLake)** window, enter the **Name** as `return-policy`, select the **Embedding model** as `text-embedding-ada-002`, choose the required **Lakehouse**: **<inject key= "Lakehouse" enableCopy="false"/>** from *Browse OneLake*, and click on **Create**.
+2. Navigate to **Microsoft Fabric**, click on **Workspace** then select **<inject key= "WorkspaceName" enableCopy="false"/>** and click on **Manage access** button.
+
+    ![Step 2.png](../media/image26.png)
+
+3. Click on **+ Add people or groups** button and enter the **<inject key= "searchServiceName" enableCopy="true"/>** and provide access as **Contributor** and click on **Add** button.
+
+4. Click on **x** button to close the window.
+
+    ![Step 2.png](../media/access01.png)
+   
+5. In the **Create a knowledge source (OneLake)** window, enter the **Name** as `return-policy`, select the **Embedding model** as `text-embedding-ada-002`, choose the required **Lakehouse**: **<inject key= "Lakehouse" enableCopy="false"/>** from *Browse OneLake*, and click on **Create**.
 
     ![Step 1.png](../media/lakehousefoundry.png)
 
-3. Review and validate all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
+6. Review and validate all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
 
     >**Note:** If the knowledge source name cannot be edited, leave it unchanged.
 
