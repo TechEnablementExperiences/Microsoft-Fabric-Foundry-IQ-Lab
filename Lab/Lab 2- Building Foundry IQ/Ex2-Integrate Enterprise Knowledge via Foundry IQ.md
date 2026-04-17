@@ -72,36 +72,11 @@ To enable accurate and context-aware responses, Miguel integrates enterprise con
 
     ![Step 1.png](../media/image25.png)
 
-2. Navigate to **Microsoft Fabric**, click on **Workspace** then select **<inject key= "WorkspaceName" enableCopy="false"/>** and click on **Manage access** button.
+2. In the **Create a knowledge source (OneLake)** window, enter the **Name** as `return-policy`, select the **Embedding model** as `text-embedding-ada-002`, choose the required **Lakehouse**: **<inject key= "Lakehouse" enableCopy="false"/>** from *Browse OneLake*, and click on **Create**.
 
-    ![Step 2.png](../media/image26.png)
+    ![Step 1.png](../media/lakehousefoundry.png)
 
-3. Click on **+ Add people or groups** button and enter the **<inject key= "searchServiceName" enableCopy="true"/>** and provide access as **Contributor** and click on **Add** button.
-
-4. Click on **x** button to close the window.
-
-    ![Step 2.png](../media/access01.png)
-
-5. Click on **Filter dropdown**, then select **Lakehouse** and then click on **<inject key= "Lakehouse" enableCopy="false"/>**
-
-    ![Step 3.png](../media/image27.png)
-
-6. Copy the **Fabric Workspace ID** and the **Lakehouse ID** that appear before lakehouse and after lakehouse.
-
-    > You can find the Fabric Workspace ID in the URL. It is the unique string between two "/" characters after /groups/ in your browser.
-    
-    >You can find the Lakehouse ID in the URL. It is the unique string between two "/" characters after /lakehouses/ in your browser.
-
-    ![Step 4.png](../media/image29.png)
-
-7. Navigate back to Microsoft Foundry, enter name as **return-policy**, paste the previously copied **Fabric Workspace ID** and the **Lakehouse ID**, select **text-embedding-ada-002**, and then click on **Create**.
-
-    >**Note:** If the knowledge source name already exists, please add a suffix (e.g., _1, _new) to create a unique name.
-    > If the Lakehouse and workspace parameters are not visible, scroll down and select the lakehouse created in the Fabric Lab.
-
-    ![Step 5.png](../media/image95.png)
-
-8. Review and validate all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
+3. Review and validate all the **Knowledge sources**, enter name as **foundry-lab-knowledgebase** in the Basic configuration section. For the **Chat completion model** field, select **gpt-4o**.  Click on **Save** knowledge base.
 
     >**Note:** If the knowledge source name cannot be edited, leave it unchanged.
 
