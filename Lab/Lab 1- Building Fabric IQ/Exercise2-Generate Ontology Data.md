@@ -69,7 +69,7 @@ In this task of the workshop, you will be creating a Lakehouse.
 
     ![CurrentUpload](../media/CurrentUpload.png)
 
-13. Now, the **Files** section of the Lakehosue will how both files. 
+13. Now, the **Files** section of the Lakehosue will show all files. 
 
     ![LakehouseWithFiles](../media/LakehouseWithFiles.png)
 

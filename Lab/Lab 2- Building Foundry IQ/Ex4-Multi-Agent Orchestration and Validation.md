@@ -173,6 +173,8 @@ The **response** of the agents can be seen on the right side (See image pointer/
 
 1. In the Workflow page, click on **Traces**, then click on **Create or connect**.
 
+    >**Note**: If the **Create or Connect** button is not visible, refresh the page. Once refreshed, the **Connect** button should appear.
+
     ![Step 1.png](../media/image76.png)
 
 2. Select the **foundryiq-appinsight** as Application insights resource name, then click on **Connect**.
